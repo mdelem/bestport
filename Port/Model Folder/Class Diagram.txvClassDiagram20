@@ -22,7 +22,7 @@
 			</reference>
 			<reference referencedUin="jdt:l_impl:src:JITController:CarrierObserver">
 				<property name="sourceAnchor" value="597,251"/>
-				<property name="targetAnchor" value="597,193"/>
+				<property name="targetAnchor" value="597,176"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 			<reference referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC">
@@ -62,7 +62,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CarrierObserver">
-			<property name="bounds" value="575,35,154,153"/>
+			<property name="bounds" value="575,35,154,136"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
@@ -79,10 +79,10 @@
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:SCarrier:lnkCarrierObserver">
-				<property name="sourceAnchor" value="261,186"/>
-				<property name="targetAnchor" value="580,186"/>
+				<property name="sourceAnchor" value="261,225"/>
+				<property name="targetAnchor" value="580,130"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:SCarrier:lnkCarrierObserver">
-					<property name="bounds" value="393,189,54,21"/>
+					<property name="bounds" value="393,188,54,21"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:StraddleCarrier:lnkCarrierObserver">
 					<property name="bounds" value="398,189,54,21"/>
