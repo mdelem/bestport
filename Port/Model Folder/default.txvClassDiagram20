@@ -5,5 +5,18 @@
 	<view uin="V1hexuhfnyx9hx4-u3vl3i">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="design:view:::V-oyrl70fnzs75bbwjukbo">
+			<property name="bounds" value="5,125,194,147"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:CraneFacade">
+			<property name="bounds" value="224,-4,146,102"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:CarrierFacade">
+			<property name="bounds" value="5,5,132,119"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>
