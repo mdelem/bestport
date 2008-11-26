@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="ba089nfnzs96mctlq88x">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="StraddleCarrier"/>
+		<link uin="ieje0rfnzth6pw-w7gnha">
+			<property name="$metaclass" value="RequiredInterface20"/>
+			<participant referencedUin="design:node:::ba089nfnzs96mctlq88x" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:JITLogistics" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nfnzsbpo0thfgx8">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="JITLogistics"/>
+		<link uin="ieje0rfnzth3ms9r9zxr">
+			<property name="$metaclass" value="ProvidedInterface20"/>
+			<participant referencedUin="design:node:::ba089nfnzsbpo0thfgx8" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:JITLogistics" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nfnzsv03x-pqz1ds">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="Crane"/>
+		<link uin="ieje0rfnzthgr0c5ej4a">
+			<property name="$metaclass" value="RequiredInterface20"/>
+			<participant referencedUin="design:node:::ba089nfnzsv03x-pqz1ds" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:JITLogistics" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>
