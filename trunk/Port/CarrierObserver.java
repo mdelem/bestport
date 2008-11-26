@@ -2,13 +2,13 @@ import java.awt.Point;
 
 public interface CarrierObserver {
 
-	void containerUnloaded(int carrierID, int containerID);
+	void containerUnloaded(SCarrier carrier, int containerID);
 
-	void containerLoaded(int carrierID, int containerID);
+	void containerLoaded(SCarrier carrier, int containerID);
 
-	void locationChanged(int carrierID, Point location);
+	void locationChanged(SCarrier carrier);
 
-	Point askDestination(int carrierID);
+	Point askDestination(SCarrier carrier);
 
 	boolean checkUser(String user, String password, String operation);
 }
