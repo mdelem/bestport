@@ -44,7 +44,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CraneFacade">
-			<property name="bounds" value="375,175,221,121"/>
+			<property name="bounds" value="375,215,221,121"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
@@ -52,7 +52,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CarrierFacade">
-			<property name="bounds" value="375,15,221,141"/>
+			<property name="bounds" value="375,15,221,181"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
