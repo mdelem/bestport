@@ -34,4 +34,18 @@
 			<participant referencedUin="jdt:e_class:src:CraneFacade" role="Supplier"></participant>
 		</link>
 	</node>
+	<node uin="-yrgd8efo0bgp88-4diepc">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Unload Container"/>
+		<node uin="-y8nsowfo0bimck-blb4l6">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline2"/>
+			<property name="connectableElementName" value="JITController"/>
+		</node>
+		<node uin="-y8nsowfo0bhw4aq9vxzq">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline1"/>
+			<property name="connectableElementName" value="Crane"/>
+		</node>
+	</node>
 </nodeSet>
