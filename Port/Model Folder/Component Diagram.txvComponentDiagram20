@@ -6,17 +6,17 @@
 		<property name="$metaclass" value="ComponentDiagram20"/>
 		<property name="$name" value="Component Diagram"/>
 		<reference referencedUin="design:node:::ba089nfnzs96mctlq88x">
-			<property name="bounds" value="166,15,125,60"/>
+			<property name="bounds" value="166,15,129,60"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="design:link:::ieje0rfnzth6pw-w7gnha:ba089nfnzs96mctlq88x">
-				<property name="sourceAnchor" value="296,52"/>
+				<property name="sourceAnchor" value="300,52"/>
 				<property name="targetAnchor" value="380,52"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::ba089nfnzsbpo0thfgx8">
-			<property name="bounds" value="735,15,107,60"/>
+			<property name="bounds" value="735,15,111,60"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="design:link:::ieje0rfnzth3ms9r9zxr:ba089nfnzsbpo0thfgx8">
@@ -33,11 +33,11 @@
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::ba089nfnzsv03x-pqz1ds">
-			<property name="bounds" value="175,175,107,60"/>
+			<property name="bounds" value="175,175,111,60"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="design:link:::ieje0rfnzudefw-282k17:ba089nfnzsv03x-pqz1ds">
-				<property name="sourceAnchor" value="287,222"/>
+				<property name="sourceAnchor" value="291,222"/>
 				<property name="targetAnchor" value="380,222"/>
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
