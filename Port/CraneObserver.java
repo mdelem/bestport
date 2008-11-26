@@ -2,7 +2,7 @@
 
 public interface CraneObserver {
 
-	void containerLoaded(int craneID);
+	void containerLoaded(Crane crane);
 
-	public void containerUnloaded(int craneID);
+	public void containerUnloaded(Crane crane);
 }
