@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-oyrl70fnzs75bbwjukbo">
+		<property name="$metaclass" value="ComponentDiagram20"/>
+		<property name="$name" value="Component Diagram"/>
+		<reference referencedUin="design:node:::ba089nfnzs96mctlq88x">
+			<property name="bounds" value="95,15,125,60"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:link:::ieje0rfnzth6pw-w7gnha:ba089nfnzs96mctlq88x">
+				<property name="sourceAnchor" value="225,52"/>
+				<property name="targetAnchor" value="380,52"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ba089nfnzsbpo0thfgx8">
+			<property name="bounds" value="575,15,107,60"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:link:::ieje0rfnzth3ms9r9zxr:ba089nfnzsbpo0thfgx8">
+				<property name="sourceAnchor" value="580,55"/>
+				<property name="targetAnchor" value="489,55"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ba089nfnzsv03x-pqz1ds">
+			<property name="bounds" value="104,175,107,60"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:link:::ieje0rfnzthgr0c5ej4a:ba089nfnzsv03x-pqz1ds">
+				<property name="sourceAnchor" value="216,180"/>
+				<property name="targetAnchor" value="380,89"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:JITLogistics">
+			<property name="bounds" value="375,15,109,141"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>
