@@ -8,7 +8,5 @@ public interface CarrierObserver {
 
 	void locationChanged(SCarrier carrier);
 
-	Point askDestination(SCarrier carrier);
-
 	boolean checkUser(String user, String password, String operation);
 }
