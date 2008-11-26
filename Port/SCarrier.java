@@ -9,7 +9,17 @@ public class SCarrier {
 
 	private CarrierObserver lnkCarrierObserver;
 
-	public void doTick() {
+	public void translate(int dx, int dy) {
+		return;
+	}
+
+	public int identifyContainer() {
+		//Commented automatically
+		//return;
+		return 0;
+	}
+
+	public void move() {
 		return;
 	}
 
