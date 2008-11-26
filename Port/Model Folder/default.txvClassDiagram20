@@ -15,7 +15,7 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CarrierFacade">
-			<property name="bounds" value="5,5,132,119"/>
+			<property name="bounds" value="5,5,146,153"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
