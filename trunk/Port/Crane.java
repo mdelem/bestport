@@ -9,6 +9,10 @@ public class Crane {
 
 	private CraneObserver lnkCraneObserver;
 
+	public void unloadContainer() {
+		return;
+	}
+
 	public Point getPosition() {
 		//Commented automatically
 		//return;
