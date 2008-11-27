@@ -3,6 +3,7 @@ public class JITController {
 
 	
 	
+	private Container lnkContainer;
 	/**
 	 * @directed true
 	 */

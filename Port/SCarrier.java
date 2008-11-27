@@ -4,6 +4,10 @@ public class SCarrier {
 
 	private Point position;
 
+	public void identifyContainer() {
+			return;
+		}
+
 	public void destinationReached() {
 		return;
 	}
