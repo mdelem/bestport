@@ -9,17 +9,17 @@
 			<property name="bounds" value="395,55,150,150"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:JITController:lnkSCarrier">
-				<property name="sourceAnchor" value="474,210"/>
-				<property name="targetAnchor" value="474,260"/>
-				<property name="bendpoints" value=""/>
-			</reference>
 			<reference referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC">
 				<property name="bounds" value="69,-17,0,0"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkCrane">
 				<property name="sourceAnchor" value="400,103"/>
 				<property name="targetAnchor" value="307,103"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:JITController:lnkSCarrier">
+				<property name="sourceAnchor" value="474,210"/>
+				<property name="targetAnchor" value="474,260"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
@@ -37,7 +37,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:SCarrier">
-			<property name="bounds" value="395,255,127,116"/>
+			<property name="bounds" value="395,255,160,133"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:StraddleCarrier:ID">
@@ -57,6 +57,11 @@
 			<property name="bounds" value="-65,115,119,82"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Simulator:lnkSCarrier">
+				<property name="sourceAnchor" value="59,181"/>
+				<property name="targetAnchor" value="400,296"/>
+				<property name="bendpoints" value=""/>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CraneGUI">
 			<property name="bounds" value="195,-44,150,80"/>
