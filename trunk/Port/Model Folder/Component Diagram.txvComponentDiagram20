@@ -57,5 +57,10 @@
 			<reference referencedUin="jdt:e_method:src:CraneObser.containerUnloaded:containerUnloaded~I">
 			</reference>
 		</reference>
+		<reference referencedUin="design:node:::ba089nfo1avmdv10f8pa">
+			<property name="bounds" value="715,215,111,60"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

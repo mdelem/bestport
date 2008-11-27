@@ -1,27 +1,8 @@
-import java.awt.Point;
 
-public class Simulator {
+public class Simulator extends java.lang.Thread {
 
-	
-	/**
-	 * @label stimulates
-	 */
-	
-	private SCarrier lnkSCarrier;
-	
-	/**
-	 * @label stimulates
-	 */
-	
-	private Crane lnkCrane;
+	public void run() {
 
-	public void unloadContainer(Crane crane) {
-		return;
 	}
 
-	public int getContainerAt(Point location) {
-		//Commented automatically
-		//return;
-		return 0;
-	}
 }

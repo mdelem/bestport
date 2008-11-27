@@ -9,7 +9,7 @@ public class Crane {
 
 	private CraneObserver lnkCraneObserver;
 
-	public void unloadContainer() {
+	public void containerUnloaded() {
 		return;
 	}
 

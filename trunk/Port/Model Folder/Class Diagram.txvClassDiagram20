@@ -11,13 +11,13 @@
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkStraddleCarrier">
 				<property name="sourceAnchor" value="484,255"/>
-				<property name="targetAnchor" value="261,255"/>
+				<property name="targetAnchor" value="414,255"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:JITController:lnkStraddleCarrier">
-					<property name="bounds" value="271,231,11,21"/>
+					<property name="bounds" value="424,231,11,21"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:JITController:lnkStraddleCarrier">
-					<property name="bounds" value="338,258,68,21"/>
+					<property name="bounds" value="415,258,68,21"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_impl:src:JITController:CarrierObserver">
@@ -30,19 +30,19 @@
 			</reference>
 			<reference referencedUin="jdt:l_impl:src:JITController:CraneObserver">
 				<property name="sourceAnchor" value="509,251"/>
-				<property name="targetAnchor" value="509,162"/>
+				<property name="targetAnchor" value="509,152"/>
 				<reference referencedUin="label:realize:jdt:l_impl:src:JITController:CraneObserver">
 					<property name="bounds" value="149,11,0,0"/>
 				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CraneObserver">
-			<property name="bounds" value="375,55,154,102"/>
+			<property name="bounds" value="395,45,154,102"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Crane">
-			<property name="bounds" value="115,55,133,82"/>
+			<property name="bounds" value="175,55,150,82"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Crane:ID">
@@ -54,10 +54,10 @@
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Crane:lnkCraneObserver">
-				<property name="sourceAnchor" value="253,100"/>
-				<property name="targetAnchor" value="380,100"/>
+				<property name="sourceAnchor" value="330,100"/>
+				<property name="targetAnchor" value="400,100"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Crane:lnkCraneObserver">
-					<property name="bounds" value="289,103,54,21"/>
+					<property name="bounds" value="338,103,54,21"/>
 				</reference>
 			</reference>
 		</reference>
@@ -67,7 +67,7 @@
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:SCarrier">
-			<property name="bounds" value="115,175,141,133"/>
+			<property name="bounds" value="231,170,178,116"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:StraddleCarrier:ID">
@@ -78,11 +78,13 @@
 					<property name="bounds" value="398,189,54,21"/>
 				</reference>
 			</reference>
+			<reference referencedUin="jdt:e_method:src:SCarrier.move:move">
+			</reference>
 			<reference referencedUin="jdt:l_ast:src:SCarrier:lnkCarrierObserver">
-				<property name="sourceAnchor" value="261,225"/>
-				<property name="targetAnchor" value="580,130"/>
+				<property name="sourceAnchor" value="414,175"/>
+				<property name="targetAnchor" value="580,175"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:SCarrier:lnkCarrierObserver">
-					<property name="bounds" value="393,188,54,21"/>
+					<property name="bounds" value="470,178,54,21"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:StraddleCarrier:lnkCarrierObserver">
 					<property name="bounds" value="398,189,54,21"/>
@@ -92,24 +94,18 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Simulator">
-			<property name="bounds" value="-85,136,133,82"/>
+			<property name="bounds" value="-65,115,133,99"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:Simulator:lnkSCarrier">
-				<property name="sourceAnchor" value="53,201"/>
-				<property name="targetAnchor" value="120,201"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:CraneGUI">
+			<property name="bounds" value="195,-44,150,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:CraneGUI:lnkCrane">
+				<property name="sourceAnchor" value="240,41"/>
+				<property name="targetAnchor" value="240,60"/>
 				<property name="bendpoints" value=""/>
-				<reference referencedUin="label:label:jdt:l_ast:src:Simulator:lnkSCarrier">
-					<property name="bounds" value="38,224,76,21"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:Simulator:lnkCrane">
-				<property name="sourceAnchor" value="53,141"/>
-				<property name="targetAnchor" value="120,141"/>
-				<property name="bendpoints" value=""/>
-				<reference referencedUin="label:label:jdt:l_ast:src:Simulator:lnkCrane">
-					<property name="bounds" value="58,144,76,21"/>
-				</reference>
 			</reference>
 		</reference>
 	</view>
