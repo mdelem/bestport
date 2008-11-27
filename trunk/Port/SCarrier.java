@@ -1,6 +1,6 @@
 import java.awt.Point;
 
-public class SCarrier {
+public class SCarrier implements ContainerLocation {
 
 	private Point position;
 

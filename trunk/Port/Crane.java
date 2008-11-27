@@ -1,6 +1,6 @@
 import java.awt.Point;
 
-public class Crane {
+public class Crane implements Location, PortLocation {
 
 	private Point position;
 
