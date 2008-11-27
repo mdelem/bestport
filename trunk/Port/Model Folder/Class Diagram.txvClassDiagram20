@@ -9,17 +9,22 @@
 			<property name="bounds" value="395,55,150,150"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:JITController:lnkContainer">
+				<property name="sourceAnchor" value="550,185"/>
+				<property name="targetAnchor" value="640,185"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:JITController:lnkSCarrier">
+				<property name="sourceAnchor" value="474,210"/>
+				<property name="targetAnchor" value="474,260"/>
+				<property name="bendpoints" value=""/>
+			</reference>
 			<reference referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC">
 				<property name="bounds" value="69,-17,0,0"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkCrane">
 				<property name="sourceAnchor" value="400,103"/>
 				<property name="targetAnchor" value="307,103"/>
-				<property name="bendpoints" value=""/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:JITController:lnkSCarrier">
-				<property name="sourceAnchor" value="474,210"/>
-				<property name="targetAnchor" value="474,260"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
@@ -37,7 +42,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:SCarrier">
-			<property name="bounds" value="395,255,160,133"/>
+			<property name="bounds" value="395,255,160,150"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:StraddleCarrier:ID">
@@ -80,6 +85,11 @@
 		</reference>
 		<reference referencedUin="jdt:e_class:src:LogisticsDptGUI">
 			<property name="bounds" value="495,-44,155,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Container">
+			<property name="bounds" value="635,155,162,99"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
