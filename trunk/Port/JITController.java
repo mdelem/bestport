@@ -1,14 +1,18 @@
-import java.awt.Point;
 
-public class JITController implements CraneObserver, CarrierObserver {
+public class JITController {
 
+	
+	
 	/**
 	 * @directed true
-	 * @label dispatchs
-	 * @supplierCardinality *
 	 */
-
-	private SCarrier lnkStraddleCarrier;
+	
+	private SCarrier lnkSCarrier;
+	/**
+	 * @directed true
+	 */
+	
+	private Crane lnkCrane;
 
 	private SCarrier findClosestSC() {
 		//Commented automatically
@@ -24,11 +28,6 @@ public class JITController implements CraneObserver, CarrierObserver {
 	public void containerUnloaded(Crane crane) {
 		// TODO Auto-generated method stub
 
-	}
-
-	public boolean checkUser(String user, String password, String operation) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	public void containerLoaded(SCarrier carrier, int containerID) {
