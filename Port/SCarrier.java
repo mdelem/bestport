@@ -9,18 +9,14 @@ public class SCarrier {
 
 	private CarrierObserver lnkCarrierObserver;
 
-	public void translate(int dx, int dy) {
+	public void run() {
 		return;
 	}
 
-	public int identifyContainer() {
+	public int getLoadedContainerID() {
 		//Commented automatically
 		//return;
 		return 0;
-	}
-
-	public void move() {
-		return;
 	}
 
 	public void setDestination(Point p, boolean loadContainerAtLocation) {
