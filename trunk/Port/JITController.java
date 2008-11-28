@@ -51,9 +51,9 @@ public class JITController {
 
 	}
 
-	public void locationChanged(SCarrier carrier) {
-		// TODO Auto-generated method stub
-
-	}
+	public void destinationReached(SCarrier carrier) {
+			// TODO Auto-generated method stub
+	
+		}
 
 }

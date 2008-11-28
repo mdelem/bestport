@@ -6,12 +6,12 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="Class Diagram"/>
 		<reference referencedUin="jdt:e_class:src:JITController">
-			<property name="bounds" value="775,496,150,150"/>
+			<property name="bounds" value="775,496,160,150"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkContainer">
-				<property name="sourceAnchor" value="930,560"/>
-				<property name="targetAnchor" value="1048,360"/>
+				<property name="sourceAnchor" value="940,560"/>
+				<property name="targetAnchor" value="1049,361"/>
 				<property name="bendpoints" value="960,560"/>
 				<property name="smooth_bendpoints" value="960,560"/>
 				<property name="location_set_by_user" value="true"/>
@@ -27,18 +27,18 @@
 				<property name="bendpoints" value=""/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkPortLocation">
-				<property name="sourceAnchor" value="928,510"/>
-				<property name="targetAnchor" value="544,153"/>
+				<property name="sourceAnchor" value="940,513"/>
+				<property name="targetAnchor" value="546,155"/>
 				<property name="bendpoints" value="1177,513,1291,199,1011,155"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
-					<property name="bounds" value="938,486,12,21"/>
+					<property name="bounds" value="950,489,12,21"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:JITController:lnkPortLocation">
 					<property name="bounds" value="1240,346,32,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
-					<property name="bounds" value="554,129,12,21"/>
+					<property name="bounds" value="556,131,12,21"/>
 				</reference>
 			</reference>
 		</reference>
@@ -65,12 +65,12 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:SCarrier">
-			<property name="bounds" value="707,335,187,150"/>
+			<property name="bounds" value="707,335,200,133"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:SCarrier:LeafPortLocation">
-				<property name="sourceAnchor" value="720,338"/>
-				<property name="targetAnchor" value="657,280"/>
+				<property name="sourceAnchor" value="724,336"/>
+				<property name="targetAnchor" value="658,279"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:StraddleCarrier:ID">
 				<property name="sourceAnchor" value="271,186"/>
@@ -82,14 +82,17 @@
 			</reference>
 			<reference referencedUin="jdt:e_method:src:SCarrier.move:move">
 			</reference>
+			<reference referencedUin="jdt:e_method:src:SCarrier.destinationReachedEventSensor:destinationReachedEventSensor">
+				<property name="bounds" value="96,-15,0,0"/>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Simulator">
 			<property name="bounds" value="775,-25,119,82"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Simulator:lnkSCarrier">
-				<property name="sourceAnchor" value="866,61"/>
-				<property name="targetAnchor" value="866,340"/>
+				<property name="sourceAnchor" value="860,61"/>
+				<property name="targetAnchor" value="860,339"/>
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
@@ -104,8 +107,8 @@
 				<property name="bendpoints" value=""/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:CraneGUI:lnkJITController">
-				<property name="sourceAnchor" value="509,724"/>
-				<property name="targetAnchor" value="778,607"/>
+				<property name="sourceAnchor" value="508,723"/>
+				<property name="targetAnchor" value="777,606"/>
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
