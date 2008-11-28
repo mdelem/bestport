@@ -1,14 +1,15 @@
-import java.awt.Point;
 
 public class SCarrier extends LeafPortLocation {
 
-	public void destinationReachedEventSensor() {
-				return;
-			}
+	private int containerIDSensor;
 
-	public void containerIDSensor() {
-			return;
-		}
+	public void loadContainerOrder() {
+		return;
+	}
+
+	public void destinationReachedEventSensor() {
+		return;
+	}
 
 	public boolean isMoving() {
 		//Commented automatically
@@ -23,5 +24,13 @@ public class SCarrier extends LeafPortLocation {
 	public void setDestination(LeafPortLocation property1) {
 		this.destination = property1;
 	}
+
+	public int getContainerIDSensor() {
+			return property1;
+		}
+
+	public void setContainerIDSensor(int property1) {
+			this.property1 = property1;
+		}
 
 }
