@@ -2,24 +2,28 @@
 public class JITController {
 
 	
+	/**
+	 * @clientCardinality 1
+	 * @directed true
+	 * @label port
+	 * @supplierCardinality 1
+	 */
 	
-	
+	private PortLocation lnkPortLocation;
+
+
 	/**
 	 * @directed true
 	 */
-	
+
 	private Location lnkLocation;
+
+	
+	/**
+	 * @directed true
+	 */
+	
 	private Container lnkContainer;
-	/**
-	 * @directed true
-	 */
-	
-	private SCarrier lnkSCarrier;
-	/**
-	 * @directed true
-	 */
-	
-	private Crane lnkCrane;
 
 	private SCarrier findClosestSC() {
 		//Commented automatically

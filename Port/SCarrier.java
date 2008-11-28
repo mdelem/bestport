@@ -1,12 +1,10 @@
 import java.awt.Point;
 
-public class SCarrier implements ContainerLocation {
-
-	private Point position;
+public class SCarrier extends LeafPortLocation {
 
 	public void identifyContainer() {
-			return;
-		}
+		return;
+	}
 
 	public void destinationReached() {
 		return;
@@ -22,17 +20,8 @@ public class SCarrier implements ContainerLocation {
 		return;
 	}
 
-	public Point getPosition() {
-		//Commented automatically
-		//return;
-		return null;
-	}
-
 	public int getPosition() {
 		return position;
 	}
 
-	public void setPosition(Point property1) {
-		this.position = property1;
-	}
 }

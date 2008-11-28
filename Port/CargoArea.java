@@ -1,7 +1,5 @@
-import java.awt.Point;
 
-public class CargoArea implements PortLocation {
+public class CargoArea extends CompositePortLocation {
 
-	private Point[] emplacements;
 	private Location lnkLocation;
 }
