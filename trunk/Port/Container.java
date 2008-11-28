@@ -1,26 +1,22 @@
 public class Container {
 
-	
-	
 	/**
 	 * @directed true
 	 * @label is at
 	 */
-	
-	private ContainerLocation lnkLocation1;
+
+	private LeafPortLocation lnkLeafPortLocation;
+
 	/**
 	 * @directed true
 	 * @label itinerary
 	 */
-	
+
 	private Location lnkLocation;
+
 	private int ID;
 
-	public void setCurrentLocation() {
-		return;
-	}
-
-	public void getNextDestination() {
+	public void setCurrentLocation(LeafPortLocation location) {
 		return;
 	}
 
