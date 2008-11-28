@@ -2,11 +2,11 @@ import java.awt.Point;
 
 public abstract class PortLocation {
 
-	private int ID;
+	public int ID;
 
-	private String name;
+	public String name;
 
-	private Point position;
+	public Point position;
 
 	public PortLocation getParent() {
 		//Commented automatically
