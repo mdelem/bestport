@@ -2,9 +2,9 @@ import java.awt.Point;
 
 public class SCarrier extends LeafPortLocation {
 
-	public void identifyContainer() {
-		return;
-	}
+	public void identifyContainerSensor() {
+			return;
+		}
 
 	public void destinationReached() {
 		return;
