@@ -69,8 +69,8 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:SCarrier:LeafPortLocation">
-				<property name="sourceAnchor" value="725,360"/>
-				<property name="targetAnchor" value="725,300"/>
+				<property name="sourceAnchor" value="724,360"/>
+				<property name="targetAnchor" value="724,300"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:StraddleCarrier:ID">
 				<property name="sourceAnchor" value="271,186"/>
@@ -84,14 +84,18 @@
 			</reference>
 			<reference referencedUin="jdt:e_method:src:SCarrier.setDestination:setDestination~QPoint;~Z">
 			</reference>
+			<reference referencedUin="jdt:l_ast:src:SCarrier:destination">
+				<property name="sourceAnchor" value="716,360"/>
+				<property name="targetAnchor" value="716,300"/>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Simulator">
 			<property name="bounds" value="775,-25,119,82"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Simulator:lnkSCarrier">
-				<property name="sourceAnchor" value="871,62"/>
-				<property name="targetAnchor" value="871,358"/>
+				<property name="sourceAnchor" value="868,62"/>
+				<property name="targetAnchor" value="868,358"/>
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
