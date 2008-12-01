@@ -1,5 +1,5 @@
 
-public class SCarrier extends LeafPortLocation {
+public class SCarrier extends Carrier {
 
 	private int containerIDSensor;
 
