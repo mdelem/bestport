@@ -1,5 +1,14 @@
 public class Container {
 
+	
+	/**
+	 * @clientCardinality 1
+	 * @directed true
+	 * @supplierCardinality 0..*
+	 */
+	
+	private Transport lnkTransport;
+
 	private boolean hazardous;
 
 	/**
