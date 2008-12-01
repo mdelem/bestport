@@ -2,18 +2,6 @@
 
 
 <nodeSet  version="1.1">
-	<node uin="ba089nfnzs96mctlq88x">
-		<property name="$metaclass" value="Component20"/>
-		<property name="$name" value="StraddleCarrier"/>
-	</node>
-	<node uin="ba089nfnzsbpo0thfgx8">
-		<property name="$metaclass" value="Component20"/>
-		<property name="$name" value="JITLogistics"/>
-	</node>
-	<node uin="ba089nfnzsv03x-pqz1ds">
-		<property name="$metaclass" value="Component20"/>
-		<property name="$name" value="Crane"/>
-	</node>
 	<node uin="-yrgd8efo0bgp88-4diepc">
 		<property name="$metaclass" value="SD20_Interaction"/>
 		<property name="$name" value="Unload Container"/>
@@ -541,8 +529,40 @@
 			</node>
 		</node>
 	</node>
-	<node uin="ba089nfo1avmdv10f8pa">
+	<node uin="ba089nfo7cl6afbdh83d">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="GUI"/>
+		<link uin="ieje0rfo7cmdhzt40u8d">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::ba089nfo7cl6afbdh83d" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nfo7clky5myd0sa" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rfo7cnjxoiyitof">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::ba089nfo7cl6afbdh83d" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nfo7clerxnruehj" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nfo7clerxnruehj">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="Controller"/>
+		<link uin="ieje0rfo7cnnskq8kfyl">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::ba089nfo7clerxnruehj" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nfo7clky5myd0sa" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nfo7clky5myd0sa">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="Data"/>
+	</node>
+	<node uin="ba089nfo7cnwa5-suf6lq">
 		<property name="$metaclass" value="Component20"/>
 		<property name="$name" value="Simulator"/>
+		<link uin="ieje0rfo7co5jgcmq7u9">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::ba089nfo7cnwa5-suf6lq" role="Client"></participant>
+			<participant referencedUin="design:node:::ba089nfo7clky5myd0sa" role="Supplier"></participant>
+		</link>
 	</node>
 </nodeSet>
