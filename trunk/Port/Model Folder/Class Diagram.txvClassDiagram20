@@ -131,6 +131,12 @@
 			<property name="bounds" value="752,895,155,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:LogisticsDptGUI:lnkContainer">
+				<property name="sourceAnchor" value="872,900"/>
+				<property name="targetAnchor" value="1178,418"/>
+				<property name="bendpoints" value="1237,525"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
 			<reference referencedUin="jdt:l_ast:src:LogisticsDptGUI:lnkJITController">
 				<property name="sourceAnchor" value="808,900"/>
 				<property name="targetAnchor" value="808,870"/>
@@ -145,25 +151,25 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Container">
-			<property name="bounds" value="1035,215,162,199"/>
+			<property name="bounds" value="1035,194,162,220"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<property name="collapsedCompartments" value=""/>
 			<reference referencedUin="jdt:l_ast:src:Container:lnkTransport">
-				<property name="sourceAnchor" value="1098,218"/>
-				<property name="targetAnchor" value="927,180"/>
+				<property name="sourceAnchor" value="1100,199"/>
+				<property name="targetAnchor" value="925,177"/>
 				<property name="bendpoints" value="1100,180"/>
 				<property name="smooth_bendpoints" value="1100,180"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Container:lnkTransport">
-					<property name="bounds" value="983,183,60,21"/>
+					<property name="bounds" value="972,181,60,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Container:lnkTransport">
-					<property name="bounds" value="937,156,29,21"/>
+					<property name="bounds" value="935,153,29,21"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Container:lnkTransport">
-					<property name="bounds" value="1102,187,12,21"/>
+					<property name="bounds" value="1203,178,12,21"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Container:hazardous">
@@ -177,8 +183,8 @@
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Container:lnkLeafPortLocation">
-				<property name="sourceAnchor" value="1038,297"/>
-				<property name="targetAnchor" value="693,297"/>
+				<property name="sourceAnchor" value="1039,294"/>
+				<property name="targetAnchor" value="691,294"/>
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Container:lnkLeafPortLocation">

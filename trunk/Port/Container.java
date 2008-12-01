@@ -1,4 +1,6 @@
-public class Container {
+import java.util.Observable;
+
+public class Container extends Observable {
 
 	private int nextTransportIndex;
 
