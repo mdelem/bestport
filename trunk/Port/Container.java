@@ -1,13 +1,14 @@
 public class Container {
 
-	
+	private int nextTransportIndex;
+
 	/**
 	 * @clientCardinality 1
 	 * @directed true
 	 * @label itinerary
 	 * @supplierCardinality 0..*
 	 */
-	
+
 	private Transport lnkTransport;
 
 	private boolean hazardous;
@@ -20,6 +21,18 @@ public class Container {
 	private LeafPortLocation lnkLeafPortLocation;
 
 	private int ID;
+
+	public Transport peekTransport() {
+		//Commented automatically
+		//return;
+		return null;
+	}
+
+	public Transport nextTransport() {
+		//Commented automatically
+		//return;
+		return null;
+	}
 
 	public void setCurrentLocation(LeafPortLocation location) {
 		return;
