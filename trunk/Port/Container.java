@@ -4,6 +4,7 @@ public class Container {
 	/**
 	 * @clientCardinality 1
 	 * @directed true
+	 * @label itinerary
 	 * @supplierCardinality 0..*
 	 */
 	
