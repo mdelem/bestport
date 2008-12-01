@@ -2,6 +2,15 @@
 public class JITController {
 
 	
+	
+	/**
+	 * @directed true
+	 * @label fleet
+	 */
+	
+	private SCarrier lnkSCarrier;
+
+
 	/**
 	 * @clientCardinality 1
 	 * @directed true

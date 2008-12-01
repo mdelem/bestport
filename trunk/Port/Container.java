@@ -1,18 +1,13 @@
 public class Container {
 
+	private boolean hazardous;
+
 	/**
-	 * @directed true
+	 * @clientNavigability NAVIGABLE
 	 * @label is at
 	 */
 
 	private LeafPortLocation lnkLeafPortLocation;
-
-	/**
-	 * @directed true
-	 * @label itinerary
-	 */
-
-	private Location lnkLocation;
 
 	private int ID;
 
@@ -27,4 +22,13 @@ public class Container {
 	public void setID(int property1) {
 		this.ID = property1;
 	}
+
+	public boolean isHazardous() {
+		return hazardous;
+	}
+
+	public void setHazardous(boolean hazardous) {
+		this.hazardous = hazardous;
+	}
+
 }

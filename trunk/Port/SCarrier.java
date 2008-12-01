@@ -3,9 +3,13 @@ public class SCarrier extends LeafPortLocation {
 
 	private int containerIDSensor;
 
-	public void loadContainerOrder() {
+	public void unloadContainer() {
 		return;
 	}
+
+	public void loadContainer() {
+			return;
+		}
 
 	public void destinationReachedEventSensor() {
 		return;
