@@ -1,4 +1,4 @@
-public class CraneGUI {
+public class CraneGUI extends Observer {
 
 	
 	private JITController lnkJITController;
