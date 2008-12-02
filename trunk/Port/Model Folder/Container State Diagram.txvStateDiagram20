@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-d9nhuofo8f7yyqegzxlh">
+		<property name="$metaclass" value="StateDiagram20"/>
+		<property name="$name" value="Container State Diagram"/>
+		<reference referencedUin="design:node:::j8ctxyfo8f887xhe3b5p">
+			<property name="bounds" value="55,35,646,286"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+				<property name="bounds" value="0,0,644,258"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::k9ofrlfo8f9sjn-8hzy0f:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+					<property name="bounds" value="64,42,20,20"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:link:::ieje0rfo8fs0es-ysgsiv:k9ofrlfo8f9sjn-8hzy0f:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+						<property name="sourceAnchor" value="138,115"/>
+						<property name="targetAnchor" value="202,160"/>
+						<property name="bendpoints" value=""/>
+					</reference>
+				</reference>
+				<reference referencedUin="design:node:::-3uf15dfo8fr4rvto0xaj:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+					<property name="bounds" value="144,102,78,51"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:link:::ieje0rfo8fs49o-6iwlag:-3uf15dfo8fr4rvto0xaj:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+						<property name="sourceAnchor" value="278,171"/>
+						<property name="targetAnchor" value="400,171"/>
+						<property name="bendpoints" value=""/>
+					</reference>
+					<reference referencedUin="design:node:::-acitv2fo8fr4rxl58tik:-3uf15dfo8fr4rvto0xaj:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+						<property name="bounds" value="0,0,76,23"/>
+						<property name="location_set_by_user" value="true"/>
+					</reference>
+				</reference>
+				<reference referencedUin="design:node:::-3uf15dfo8fa9iv-qvuwhu:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+					<property name="bounds" value="344,102,80,51"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:link:::ieje0rfo8fs84j-agtptl:-3uf15dfo8fa9iv-qvuwhu:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+						<property name="sourceAnchor" value="400,195"/>
+						<property name="targetAnchor" value="278,195"/>
+						<property name="bendpoints" value=""/>
+					</reference>
+					<reference referencedUin="design:node:::-acitv2fo8fa9iw3lsjoq:-3uf15dfo8fa9iv-qvuwhu:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p">
+						<property name="bounds" value="0,0,78,23"/>
+						<property name="location_set_by_user" value="true"/>
+					</reference>
+				</reference>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>
