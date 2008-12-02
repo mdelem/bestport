@@ -5,10 +5,12 @@ import java.awt.Point;
 public abstract class PortLocation {
 
 	public int ID;
-
 	public String name;
-
 	public Point position;
+	
+
+
+	
 
 	public long distanceTo(PortLocation otherLocation) {
 		//Commented automatically
