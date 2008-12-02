@@ -10,8 +10,8 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkContainer">
-				<property name="sourceAnchor" value="840,727"/>
-				<property name="targetAnchor" value="1139,418"/>
+				<property name="sourceAnchor" value="838,726"/>
+				<property name="targetAnchor" value="1140,419"/>
 				<property name="bendpoints" value="1140,480"/>
 				<property name="smooth_bendpoints" value="1140,480"/>
 				<property name="location_set_by_user" value="true"/>
@@ -19,36 +19,33 @@
 			<reference referencedUin="jdt:e_method:src:JITController.containerUnloaded:containerUnloaded~QCrane;">
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkSCarrier">
-				<property name="sourceAnchor" value="787,720"/>
-				<property name="targetAnchor" value="787,623"/>
+				<property name="sourceAnchor" value="786,718"/>
+				<property name="targetAnchor" value="786,624"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:label:jdt:l_ast:src:JITController:lnkSCarrier">
-					<property name="bounds" value="747,661,37,21"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC">
-				<property name="bounds" value="69,-17,0,0"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:JITController:lnkPortLocation">
-				<property name="sourceAnchor" value="840,740"/>
-				<property name="targetAnchor" value="546,40"/>
-				<property name="bendpoints" value="1177,513,1291,199,1080,40"/>
-				<property name="location_set_by_user" value="true"/>
-				<property name="smooth_bendpoints" value="1177,513,1291,199,1080,40"/>
-				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
-					<property name="bounds" value="848,704,12,21"/>
-				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:JITController:lnkPortLocation">
-					<property name="bounds" value="1240,346,32,21"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
-					<property name="bounds" value="556,16,12,21"/>
+					<property name="bounds" value="746,661,37,21"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:JITController:lnkLocation">
 				<property name="sourceAnchor" value="400,185"/>
 				<property name="targetAnchor" value="330,232"/>
 				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:JITController:lnkPortLocation">
+				<property name="sourceAnchor" value="838,739"/>
+				<property name="targetAnchor" value="544,39"/>
+				<property name="bendpoints" value="1177,513,1291,199,1080,40"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="smooth_bendpoints" value="1177,513,1291,199,1080,40"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
+					<property name="bounds" value="846,703,12,21"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:JITController:lnkPortLocation">
+					<property name="bounds" value="1240,346,32,21"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
+					<property name="bounds" value="554,15,12,21"/>
+				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Crane">
@@ -113,16 +110,16 @@
 			<property name="bounds" value="439,895,150,82"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:e_method:src:CraneGUI.containerUnloaded:containerUnloaded">
+			</reference>
 			<reference referencedUin="jdt:l_ast:src:CraneGUI:lnkCrane">
 				<property name="sourceAnchor" value="530,898"/>
 				<property name="targetAnchor" value="641,538"/>
 				<property name="bendpoints" value=""/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:CraneGUI.containerUnloaded:containerUnloaded">
-			</reference>
 			<reference referencedUin="jdt:l_ast:src:CraneGUI:lnkJITController">
-				<property name="sourceAnchor" value="579,898"/>
-				<property name="targetAnchor" value="679,840"/>
+				<property name="sourceAnchor" value="581,900"/>
+				<property name="targetAnchor" value="677,838"/>
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
@@ -137,17 +134,17 @@
 				<property name="bendpoints" value="1237,525"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:l_ast:src:LogisticsDptGUI:lnkJITController">
-				<property name="sourceAnchor" value="808,900"/>
-				<property name="targetAnchor" value="808,870"/>
-				<property name="bendpoints" value=""/>
-			</reference>
 			<reference referencedUin="jdt:l_ast:src:LogisticsDptGUI:lnkPortLocation">
 				<property name="sourceAnchor" value="881,900"/>
 				<property name="targetAnchor" value="546,20"/>
 				<property name="bendpoints" value="1282,570,1358,144,1100,20"/>
 				<property name="location_set_by_user" value="true"/>
 				<property name="smooth_bendpoints" value="1282,570,1358,144,1100,20"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:LogisticsDptGUI:lnkJITController">
+				<property name="sourceAnchor" value="806,900"/>
+				<property name="targetAnchor" value="806,870"/>
+				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Container">
@@ -162,11 +159,11 @@
 				<property name="bendpoints" value="1100,180"/>
 				<property name="smooth_bendpoints" value="1100,180"/>
 				<property name="location_set_by_user" value="true"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:Container:lnkTransport">
-					<property name="bounds" value="973,183,60,21"/>
-				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Container:lnkTransport">
 					<property name="bounds" value="937,156,29,21"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:Container:lnkTransport">
+					<property name="bounds" value="973,183,60,21"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Container:lnkTransport">
 					<property name="bounds" value="1203,178,12,21"/>
@@ -201,8 +198,8 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:CargoArea:CompositePortLocation">
-				<property name="sourceAnchor" value="229,360"/>
-				<property name="targetAnchor" value="229,331"/>
+				<property name="sourceAnchor" value="228,360"/>
+				<property name="targetAnchor" value="228,331"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:CargoArea:lnkLocation">
 				<property name="sourceAnchor" value="187,380"/>
@@ -211,7 +208,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:PortLocation">
-			<property name="bounds" value="355,15,186,150"/>
+			<property name="bounds" value="355,15,186,167"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
@@ -220,16 +217,16 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:CompositePortLocation:PortLocation">
+				<property name="sourceAnchor" value="366,250"/>
+				<property name="targetAnchor" value="366,187"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
 			<reference referencedUin="jdt:l_ast:src:CompositePortLocation:lnkPortLocation">
-				<property name="sourceAnchor" value="280,251"/>
+				<property name="sourceAnchor" value="279,250"/>
 				<property name="targetAnchor" value="358,128"/>
 				<property name="bendpoints" value="280,129"/>
 				<property name="smooth_bendpoints" value="280,129"/>
-				<property name="location_set_by_user" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:l_gnt:src:CompositePortLocation:PortLocation">
-				<property name="sourceAnchor" value="370,251"/>
-				<property name="targetAnchor" value="370,170"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 		</reference>
@@ -238,8 +235,8 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:LeafPortLocation:PortLocation">
-				<property name="sourceAnchor" value="537,218"/>
-				<property name="targetAnchor" value="537,170"/>
+				<property name="sourceAnchor" value="538,219"/>
+				<property name="targetAnchor" value="538,187"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CargoAreaStack">
@@ -247,8 +244,8 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:CargoAreaStack:CompositePortLocation">
-				<property name="sourceAnchor" value="323,360"/>
-				<property name="targetAnchor" value="323,331"/>
+				<property name="sourceAnchor" value="322,360"/>
+				<property name="targetAnchor" value="322,331"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:CargoAreaSpace">
@@ -306,13 +303,6 @@
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 			</reference>
-			<reference referencedUin="jdt:l_ast:src:Transport:lnkLeafPortLocation">
-				<property name="sourceAnchor" value="797,86"/>
-				<property name="targetAnchor" value="544,86"/>
-				<reference referencedUin="label:label:jdt:l_ast:src:Transport:lnkLeafPortLocation">
-					<property name="bounds" value="661,89,19,21"/>
-				</reference>
-			</reference>
 			<reference referencedUin="jdt:l_ast:src:Transport:departureDate">
 				<property name="sourceAnchor" value="799,156"/>
 				<property name="targetAnchor" value="544,156"/>
@@ -323,14 +313,65 @@
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 			</reference>
+			<reference referencedUin="jdt:l_ast:src:Transport:lnkLeafPortLocation">
+				<property name="sourceAnchor" value="799,83"/>
+				<property name="targetAnchor" value="544,83"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:Transport:lnkLeafPortLocation">
+					<property name="bounds" value="662,86,19,21"/>
+				</reference>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Port">
 			<property name="bounds" value="35,355,80,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:Port:CompositePortLocation">
-				<property name="sourceAnchor" value="118,379"/>
-				<property name="targetAnchor" value="225,330"/>
+				<property name="sourceAnchor" value="120,379"/>
+				<property name="targetAnchor" value="219,331"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ttifwdfo8fuv19-djkx7k">
+			<property name="bounds" value="1374,246,361,129"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:link:::ieje0rfo8fvrfxj88ajw:ttifwdfo8fuv19-djkx7k">
+				<property name="sourceAnchor" value="1376,303"/>
+				<property name="targetAnchor" value="1185,303"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="design:node:::ul14qafo8fuv1d-h25yau:ttifwdfo8fuv19-djkx7k">
+				<property name="bounds" value="0,0,333,121"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ttifwdfo8g3irhxo639j">
+			<property name="bounds" value="1255,695,280,120"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:link:::ieje0rfo8g3oxo-qwqail:ttifwdfo8g3irhxo639j">
+				<property name="sourceAnchor" value="1259,765"/>
+				<property name="targetAnchor" value="831,765"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="design:node:::ul14qafo8g3irl-k561gw:ttifwdfo8g3irhxo639j">
+				<property name="bounds" value="0,0,252,112"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ttifwdfo8geh1x5smaz7">
+			<property name="bounds" value="11,555,408,42"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:node:::ul14qafo8geh1z62emjl:ttifwdfo8geh1x5smaz7">
+				<property name="bounds" value="0,0,380,34"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="design:link:::ieje0rfo8gemgb-ooejo3:ttifwdfo8geh1x5smaz7">
+				<property name="sourceAnchor" value="297,560"/>
+				<property name="targetAnchor" value="297,439"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>

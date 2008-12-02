@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 public abstract class CompositePortLocation extends PortLocation {
 
 	
@@ -12,9 +14,9 @@ public abstract class CompositePortLocation extends PortLocation {
 		return;
 	}
 
-	public PortLocation getChildren() {
+	public Collection<PortLocation> getChildren() {
 		//Commented automatically
-		//return;
+		//return null;
 		return null;
 	}
 }
