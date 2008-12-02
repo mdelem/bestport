@@ -1,6 +1,6 @@
 import java.awt.Point;
 
-public abstract class PortLocation implements Observable {
+public abstract class PortLocation {
 
 	public int ID;
 

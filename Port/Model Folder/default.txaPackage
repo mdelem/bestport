@@ -595,4 +595,108 @@
 			<participant referencedUin="design:node:::ba089nfo7clky5myd0sa" role="Supplier"></participant>
 		</link>
 	</node>
+	<node uin="j8ctxyfo8ervhm-52foxy">
+		<property name="$metaclass" value="StateMachine"/>
+		<property name="$name" value="Straddle Carrier"/>
+		<node uin="-acitv2fo8ervhqpxbdk3">
+			<property name="$metaclass" value="Region20"/>
+			<property name="$name" value="Region20"/>
+			<node uin="k9ofrlfo8exn1q-wfsrxi">
+				<property name="$metaclass" value="PseudoState20"/>
+				<property name="$name" value="Initial1"/>
+				<property name="$kind" value="initial"/>
+				<link uin="ieje0rfo8eygd8jzau80">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<participant referencedUin="design:node:::k9ofrlfo8exn1q-wfsrxi:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8ext7vdsvrmn:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dfo8ext7vdsvrmn">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="Waiting"/>
+				<node uin="-acitv2fo8ext7yplapyq">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+				<link uin="ieje0rfo8ezpw4-bjntin">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<property name="label" value="transport order"/>
+					<participant referencedUin="design:node:::-3uf15dfo8ext7vdsvrmn:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8eynb83bhhim:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dfo8eynb83bhhim">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="Moving"/>
+				<node uin="-acitv2fo8eynbafzxmj4">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+				<link uin="ieje0rfo8f2z6copzqbg">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<property name="label" value="container loaded"/>
+					<participant referencedUin="design:node:::-3uf15dfo8eynb83bhhim:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8f1nc4-nd259x:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dfo8f1nc4-nd259x">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="Moving container"/>
+				<node uin="-acitv2fo8f1nc6iqdo06">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+				<link uin="ieje0rfo8f34krxh6ry5">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<property name="label" value="container unloaded"/>
+					<participant referencedUin="design:node:::-3uf15dfo8f1nc4-nd259x:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8ext7vdsvrmn:-acitv2fo8ervhqpxbdk3:j8ctxyfo8ervhm-52foxy" role="Supplier"></participant>
+				</link>
+			</node>
+		</node>
+	</node>
+	<node uin="j8ctxyfo8f887xhe3b5p">
+		<property name="$metaclass" value="StateMachine"/>
+		<property name="$name" value="Container"/>
+		<node uin="-acitv2fo8f887y-5b4gex">
+			<property name="$metaclass" value="Region20"/>
+			<property name="$name" value="Region20"/>
+			<node uin="k9ofrlfo8f9sjn-8hzy0f">
+				<property name="$metaclass" value="PseudoState20"/>
+				<property name="$name" value="Initial1"/>
+				<property name="$kind" value="initial"/>
+				<link uin="ieje0rfo8fs0es-ysgsiv">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<participant referencedUin="design:node:::k9ofrlfo8f9sjn-8hzy0f:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8fr4rvto0xaj:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dfo8fa9iv-qvuwhu">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="On ground"/>
+				<node uin="-acitv2fo8fa9iw3lsjoq">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+				<link uin="ieje0rfo8fs84j-agtptl">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<participant referencedUin="design:node:::-3uf15dfo8fa9iv-qvuwhu:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8fr4rvto0xaj:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dfo8fr4rvto0xaj">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="On carrier"/>
+				<node uin="-acitv2fo8fr4rxl58tik">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+				<link uin="ieje0rfo8fs49o-6iwlag">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<participant referencedUin="design:node:::-3uf15dfo8fr4rvto0xaj:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dfo8fa9iv-qvuwhu:-acitv2fo8f887y-5b4gex:j8ctxyfo8f887xhe3b5p" role="Supplier"></participant>
+				</link>
+			</node>
+		</node>
+	</node>
 </nodeSet>
