@@ -8,6 +8,12 @@ public abstract class PortLocation {
 
 	public Point position;
 
+	public long distanceTo(PortLocation otherLocation) {
+		//Commented automatically
+		//return;
+		return 0;
+	}
+
 	public PortLocation getParent() {
 		//Commented automatically
 		//return;

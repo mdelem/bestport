@@ -328,7 +328,7 @@
 					<link uin="ieje0rfo2xf67f-5u482g">
 						<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 						<participant referencedUin="design:node:::l2gqtvfo2xf670-3e05l9:c87hzvfo2xef7c1pp9rz:-y8nsowfo0bimck-blb4l6:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-						<participant referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC" role="Supplier"></participant>
+						<participant referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC~QPortLocation;" role="Supplier"></participant>
 					</link>
 				</node>
 				<node uin="l2gqtvfo2xi9b0-ftegnw">
@@ -698,5 +698,66 @@
 				</link>
 			</node>
 		</node>
+	</node>
+	<node uin="ttifwdfo8fuv19-djkx7k">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint1"/>
+		<node uin="ul14qafo8fuv1d-h25yau">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="ocl"/>
+			<property name="body" value="context: Container::insertTransport(t:Transport)&#10;//inserted transport does not overlap with an already scheduled transport&#10;pre: not itinerary-&gt;exists(u|&#10;&#9;(t.departureDate.before(u.departureDate) &#10;&#9;&#9;and t.arrivalDate.after(u.arrivalDate))&#10;&#9;or (t.departureDate.after(u.departureDate) &#10;&#9;&#9;and t.departureDate.before(u.arrivalDate)&#10;&#9;or (t.arrivalDate.after(u.departureDate) &#10;&#9;&#9;and t.arrivalDate.before(u.arrivalDate)&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;)&#10;post: this.peekTransport() = t"/>
+		</node>
+		<link uin="ieje0rfo8fvrfxj88ajw">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdfo8fuv19-djkx7k" role="Client"></participant>
+			<participant referencedUin="jdt:e_method:src:Container.insertTransport:insertTransport~QTransport;" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ttifwdfo8g3irhxo639j">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint2"/>
+		<node uin="ul14qafo8g3irl-k561gw">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="ocl"/>
+			<property name="body" value="context: JITController::findClosestSC(location:PortLocation): SCarrier&#10;pre: fleet-&gt;size() &gt;= 1&#10;post: fleet-&gt;foreach(s|s != result implies location.distance(s) &lt; location.distance(result))"/>
+		</node>
+		<link uin="ieje0rfo8g3oxo-qwqail">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdfo8g3irhxo639j" role="Client"></participant>
+			<participant referencedUin="jdt:e_method:src:JITController.findClosestSC:findClosestSC~QPortLocation;" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ttifwdfo8geh1x5smaz7">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint3"/>
+		<node uin="ul14qafo8geh1z62emjl">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="ocl"/>
+			<property name="body" value="context CargoAreaStack inv:&#10;getChildren()-&gt;forAll(c|c.oclIsTypeOf(CargoAreaSpace))"/>
+		</node>
+		<link uin="ieje0rfo8gemgb-ooejo3">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdfo8geh1x5smaz7" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:CargoAreaStack" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rfo8gzigihipl6p">
+			<property name="$metaclass" value="SemanticLink"/>
+			<property name="index" value="66"/>
+			<property name="originalName" value="CargoAreaSpace"/>
+			<property name="linkType" value="byFQName"/>
+			<participant referencedUin="design:node:::ttifwdfo8geh1x5smaz7" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:CargoAreaSpace" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rfo8gzigrx7tht0">
+			<property name="$metaclass" value="SemanticLink"/>
+			<property name="index" value="28"/>
+			<property name="originalName" value="getChildren"/>
+			<property name="linkType" value="byName"/>
+			<participant referencedUin="design:node:::ttifwdfo8geh1x5smaz7" role="Client"></participant>
+			<participant referencedUin="jdt:e_method:src:CompositePortLocation.getChildren:getChildren" role="Supplier"></participant>
+		</link>
 	</node>
 </nodeSet>
