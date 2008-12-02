@@ -1,4 +1,11 @@
+package gui;
+
 import java.util.Observer;
+
+import control.JITController;
+
+import data.Container;
+import data.PortLocation;
 
 public class LogisticsDptGUI implements Observer {
 

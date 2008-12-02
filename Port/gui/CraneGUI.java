@@ -1,3 +1,7 @@
+package gui;
+import control.JITController;
+import data.Crane;
+
 public class CraneGUI extends Observer {
 
 	

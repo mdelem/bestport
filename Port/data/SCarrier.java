@@ -1,3 +1,5 @@
+package data;
+
 
 public class SCarrier extends Carrier {
 
