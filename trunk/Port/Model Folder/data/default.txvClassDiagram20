@@ -5,5 +5,9 @@
 	<view uin="V1hexuhfo8htihs-1kvus4">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<reference referencedUin="jdt:e_class:src:data.Quay">
+			<property name="bounds" value="0,0,0,0"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>
