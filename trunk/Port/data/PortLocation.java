@@ -1,4 +1,6 @@
+package data;
 import java.awt.Point;
+
 
 public abstract class PortLocation {
 

@@ -1,3 +1,5 @@
+package data;
+
 import java.util.Collection;
 
 public abstract class CompositePortLocation extends PortLocation {
