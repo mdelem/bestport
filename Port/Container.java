@@ -24,6 +24,10 @@ public class Container extends Observable {
 
 	private int ID;
 
+	public void insertTransport(Transport t) {
+		return;
+	}
+
 	public Transport peekTransport() {
 		//Commented automatically
 		//return;
@@ -36,8 +40,14 @@ public class Container extends Observable {
 		return null;
 	}
 
-	public void setCurrentLocation(LeafPortLocation location) {
+	public void setLocation(LeafPortLocation location) {
 		return;
+	}
+
+	public LeafPortLocation getLocation() {
+		//Commented automatically
+		//return;
+		return null;
 	}
 
 	public int getID() {
