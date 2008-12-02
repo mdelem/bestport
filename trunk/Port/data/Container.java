@@ -19,6 +19,7 @@ public class Container extends Observable {
 
 	/**
 	 * @clientNavigability NAVIGABLE
+	 * @directed true
 	 * @label is at
 	 */
 
