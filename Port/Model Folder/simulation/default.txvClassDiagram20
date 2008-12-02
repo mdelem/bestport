@@ -5,5 +5,10 @@
 	<view uin="V1hexuhfo8htt2p9piliu">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:simulation.Simulator">
+			<property name="bounds" value="5,5,91,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>
