@@ -9,6 +9,7 @@ public abstract class PortLocation extends Observable {
 	private int ID;
 	private String name;
 	private Point position;
+	private PortLocation parent;
 	
 	public PortLocation(int ID, String name, Point position) {
 		this.ID=ID;
@@ -31,9 +32,11 @@ public abstract class PortLocation extends Observable {
 	}
 
 	public PortLocation getParent() {
-		//Commented automatically
-		//return;
-		return null;
+		return parent;
+	}
+	
+	public void setParent(PortLocation parent) {
+		this.parent=parent;
 	}
 
 	public ContainerSpace findFreeContainerSpace() {
@@ -71,6 +74,7 @@ public abstract class PortLocation extends Observable {
 	
 	
 	public void notifyObservers(Object arg) {
+		setChanged();
 		super.notifyObservers(arg);
 		if(getParent()!=null) {
 			getParent().notifyObservers();

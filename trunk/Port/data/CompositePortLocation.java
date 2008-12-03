@@ -24,6 +24,7 @@ public abstract class CompositePortLocation extends PortLocation {
 	 */
 	public void addChild(PortLocation location) {
 		this.portLocations.addElement(location);
+		location.setParent(this);
 		notifyObservers();
 	}
 	

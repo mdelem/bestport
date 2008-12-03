@@ -45,7 +45,6 @@ public class LogisticsDptGUI extends JFrame implements Observer {
 	}
 	
 	public void update(Observable o, Object arg) {
-		System.out.println("here");
 		this.repaint();
 		
 	}
