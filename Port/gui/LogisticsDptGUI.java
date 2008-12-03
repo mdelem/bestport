@@ -45,18 +45,20 @@ public class LogisticsDptGUI extends JFrame implements Observer {
 	}
 	
 	public void update(Observable o, Object arg) {
+		System.out.println("here");
 		this.repaint();
 		
 	}
 	
 	private void paint(Graphics g, PortLocation loc) {
-		g.drawString(loc.getName(), loc.getPosition().x, loc.getPosition().x);
+		g.drawString(loc.getName(), loc.getPosition().x, loc.getPosition().y);
 		for(PortLocation child : loc.getChildren()) {
 			paint(g, child);
 		}
 	}
 	
 	public void paint(Graphics g) {
+		super.paint(g);
 		paint(g, port);
 	}
 }
