@@ -1,31 +1,28 @@
 package data;
 
+import java.util.Collection;
 import java.util.Vector;
 
 public abstract class CompositePortLocation extends PortLocation {
 
-	
 	/**
 	 * @directed true
 	 * @link composition
 	 * @supplierCardinality 0..*
 	 */
-	private Vector<PortLocation> PortLocations;
+	private Vector<PortLocation> portLocations;
 
 	/**
 	 * addChild : add a new location inside the current location
 	 * @param location new location inside the current location (exemple : new quay in the port)
 	 */
 	public void addChild(PortLocation location) {
-		this.PortLocations.addElement(location);
+		this.portLocations.addElement(location);
+		notifyObservers();
+	}
+	
+	public Collection<PortLocation> getChildren() {
+		return portLocations;
 	}
 
-	/**
-	 * GetChildrens : get one children of the current location (exemple : return one cargoAreaStack of one CargoArea)
-	 * @return PortLocation : the asked children
-	 */
-	public PortLocation getChildren(PortLocation location) {
-		int index = this.PortLocations.indexOf(location);
-		return this.PortLocations.elementAt(index);
-	}
 }
