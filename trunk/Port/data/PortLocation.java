@@ -6,11 +6,15 @@ import java.util.Observable;
 
 public abstract class PortLocation extends Observable {
 
-	public int ID;
-	public String name;
-	public Point position;
+	private int ID;
+	private String name;
+	private Point position;
 	
-
+	public PortLocation(int ID, String name, Point position) {
+		this.ID=ID;
+		this.name=name;
+		this.position=position;
+	}
 
 	
 

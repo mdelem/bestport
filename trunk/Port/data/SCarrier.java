@@ -17,10 +17,7 @@ public class SCarrier extends Carrier {
 	 * @param position : original position of the straddle carrier
 	 */
 	public SCarrier(int id, String name, Point position) {
-		super();
-		this.ID = id;
-		this.name = name;
-		this.position = position;
+		super(id, name, position);
 		this.containerIDSensor = -1;
 	}
 
