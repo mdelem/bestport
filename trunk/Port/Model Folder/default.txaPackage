@@ -516,7 +516,7 @@
 			<link uin="ieje0rfo1cf5d4pk506j">
 				<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 				<participant referencedUin="design:node:::l2gqtvfo1cf5cqy62r7a:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-				<participant referencedUin="jdt:e_method:src:gui.CraneGUI.containerUnloaded:containerUnloaded" role="Supplier"></participant>
+				<participant referencedUin="jdt:e_method:src:gui.CraneGUI.CraneGUI:CraneGUI~QJITController;~QCrane;" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="l2gqtvfo1lelhheufxih">

@@ -6,6 +6,7 @@ import java.awt.Point;
 public class SCarrier extends Carrier {
 
 	private int containerIDSensor;
+	private LeafPortLocation destination;
 
 	
 	
@@ -50,11 +51,11 @@ public class SCarrier extends Carrier {
 	}
 
 	public int getContainerIDSensor() {
-			return property1;
+			return containerIDSensor;
 		}
 
 	public void setContainerIDSensor(int property1) {
-			this.property1 = property1;
+			this.containerIDSensor = property1;
 		}
 
 }
