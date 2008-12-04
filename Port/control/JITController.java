@@ -172,6 +172,31 @@ public class JITController {
 	}
 
 	/**
+	 * findContainerToUnload : will find one container to onload at the quay
+	 * @return the container to unload or null if there is no container
+	 */
+	private Container findContainerToUnload(){
+		
+		for (Iterator iter = this.Containers.iterator(); iter.hasNext();) {
+			Container cont = (Container) iter.next();
+			if (cont.getLocation().getPosition().equals(((Quay)this.Port.getChildren("Quay1")).getPosition())){
+				//there is at least one container waiting at the quay
+				return cont;
+			}
+		}
+		return null;
+	}
+	
+	/**
+	 * moveContainerToCrane : will move the container which is supposed to be at quay to the crane
+	 * @param cont : container to move
+	 * @param crane : crane where the container has to go
+	 */
+	private void moveContainerToCrane(Container cont, Crane crane){
+		cont.setLocation(crane);
+	}
+	
+	/**
 	 * containerLoaded : I don't know yet
 	 * @param crane
 	 */
@@ -184,9 +209,17 @@ public class JITController {
 	 * @param crane : where the closest Scarrier had to go
 	 */
 	public void containerUnloaded(Crane crane) {
-		SCarrier closest = findClosestSC(crane);
-		closest.setDestination(crane);
-		//And when the Scarrier will reach his destination the simulator will put the container on it
+		//first we have to check that some containers wait at quay to be unloaded
+		Container cont = findContainerToUnload();
+		if (cont != null){
+			//there is at least one container to unload
+			moveContainerToCrane(cont, crane); //The container was at the quay we put it on the crane (it simulate that the crane unload the cnotainer from the vessel)		
+			SCarrier closest = findClosestSC(crane);
+			closest.setDestination(crane);
+			//And when the Scarrier will reach his destination the simulator will put the container on it
+		}else{
+			System.out.println("There are no more containers to unload");
+		}
 	}
 
 	public void containerLoaded(SCarrier carrier, int containerID) {
