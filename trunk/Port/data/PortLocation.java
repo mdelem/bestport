@@ -1,8 +1,8 @@
 package data;
 import java.awt.Point;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.Observable;
-
 
 public abstract class PortLocation extends Observable {
 
@@ -24,6 +24,7 @@ public abstract class PortLocation extends Observable {
 	 * @return PortLocation : the asked children
 	 */
 	public abstract Collection<PortLocation> getChildren();
+	
 
 	public long distanceTo(PortLocation otherLocation) {
 		//Commented automatically
@@ -39,9 +40,20 @@ public abstract class PortLocation extends Observable {
 		this.parent=parent;
 	}
 
+	/**
+	 * findfreeContainerSpace : look into the cargoArea in order to find free space for stocking containers
+	 * @return the CargoAreaSpace free or null if there is no empty place
+	 */
 	public ContainerSpace findFreeContainerSpace() {
-		//Commented automatically
-		//return null;
+		Collection<PortLocation> childrens = this.getChildren();
+		for (Iterator iter = childrens.iterator(); iter.hasNext();) {
+			PortLocation stack = (PortLocation) iter.next();
+			Collection<PortLocation> cargoAreaspaces = stack.getChildren();
+			for (Iterator iterator2 = cargoAreaspaces.iterator(); iterator2.hasNext();) {
+				CargoAreaSpace space = (CargoAreaSpace) iterator2.next();
+				if (space.isFree()) return space;
+			}
+		}
 		return null;
 	}
 
