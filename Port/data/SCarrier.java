@@ -2,11 +2,14 @@ package data;
 
 import java.awt.Point;
 
+import control.JITController;
+
 
 public class SCarrier extends Carrier {
 
 	private int containerIDSensor;
 	private LeafPortLocation destination;
+	private JITController controller;
 
 	
 	
@@ -16,21 +19,28 @@ public class SCarrier extends Carrier {
 	 * @param name : name of the straddle carrier
 	 * @param position : original position of the straddle carrier
 	 */
-	public SCarrier(int id, String name, Point position) {
+	public SCarrier(int id, String name, Point position, JITController controller) {
 		super(id, name, position);
 		this.containerIDSensor = -1;
+		this.controller = controller;
 	}
 
-	public void unloadContainer() {
-		return;
+	public void unloadContainer(Container c, LeafPortLocation location) {
+		c.setLocation(location);
 	}
 
-	public void loadContainer() {
-			return;
-		}
+	/**
+	 * loadContainer : set the location of the container
+	 */
+	public void loadContainer(Container c) {
+			c.setLocation(this);
+	}
 
+	/**
+	 * DestinationReachedEventSensor : call the destinationReached Method of the Controller
+	 */
 	public void destinationReachedEventSensor() {
-		return;
+		this.controller.destinationReached(this);
 	}
 
 	public boolean isMoving() {
