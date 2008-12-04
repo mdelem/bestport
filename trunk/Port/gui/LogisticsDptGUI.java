@@ -77,7 +77,7 @@ public class LogisticsDptGUI extends JFrame implements Observer {
 		
 		for(Container c : containers) {
 			g.setColor(Color.GREEN);
-			g.fillRect(c.getLocation().getPosition().x, c.getLocation().getPosition().y, 10, 10);
+			g.fillRect(c.getLocation().getPosition().x, c.getLocation().getPosition().y, 5, 5);
 			g.drawString(""+c.getID(), c.getLocation().getPosition().x, c.getLocation().getPosition().y);
 		}
 	}
