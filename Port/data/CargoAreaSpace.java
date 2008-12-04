@@ -12,4 +12,15 @@ public class CargoAreaSpace extends ContainerSpace {
 		this.free = true;
 		this.zPosition=zposition;
 	}
+
+	public boolean isFree() {
+		return free;
+	}
+
+	public void setFree(boolean free) {
+		this.free = free;
+	}
+	
+	
+	
 }
