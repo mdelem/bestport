@@ -5,5 +5,18 @@
 	<view uin="V1hexuhfo8htnoalk08s8">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:gui.GraphicalTest">
+			<property name="bounds" value="5,5,106,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:gui.LogisticsDptGUI">
+			<property name="bounds" value="140,5,118,205"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:gui.CraneGUI">
+			<property name="bounds" value="5,125,115,166"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

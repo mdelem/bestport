@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Vector;
 
+import simulation.Simulator;
+
 import control.JITController;
 
 import data.Container;
@@ -21,19 +23,27 @@ public class GraphicalTest {
 		JITController control = new JITController();
 		LogisticsDptGUI logistics = new LogisticsDptGUI(control, control.getContainers(), control.getPort());
 		
-		CraneGUI cgui = new CraneGUI(control, null);
+		Crane crane1 = (Crane)((Quay)control.getPort().getChildren("Quay1")).getChildren("Crane1");
+		
+		CraneGUI cgui = new CraneGUI(control, crane1);
 		
 		PortLocation vessel = control.getPort().getChildren("Vessel");
+		
+		
+		
 		//First part of the simulation , make the vessel approch the quay
 		while(vessel.getPosition().x > 500 ) {
 			vessel.getPosition().translate(-1, 0);
 			vessel.setPosition(vessel.getPosition());
 			try {
-				Thread.sleep(50);
+				Thread.sleep(10);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
+		
+		Simulator simu = new Simulator(control.getSCarriers(),control.getContainers());
+		simu.start(); // this will automatically call the run() method in the simulator
 		
 		/*
 		Port port = new Port(1, "BestPort", new Point(10, 50));
