@@ -35,6 +35,9 @@ public class LogisticsDptGUI extends JFrame implements Observer {
 		this.containers=c;
 		
 		port.addObserver(this);
+		for(Container o : c) {
+			o.addObserver(this);
+		}
 		
 		jPanel = new JPanel();
 		jPanel.setPreferredSize(new Dimension(800, 600));

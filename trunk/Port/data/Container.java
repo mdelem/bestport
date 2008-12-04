@@ -74,6 +74,8 @@ public class Container extends Observable {
 	 * @param location : new location of the container
 	 */
 	public void setLocation(LeafPortLocation location) {
+		setChanged();
+		notifyObservers();
 		this.Location = location;
 	}
 
