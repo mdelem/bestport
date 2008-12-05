@@ -3,34 +3,48 @@ import java.util.Iterator;
 import java.util.Vector;
 
 import data.Container;
+import data.ExternalCarrier;
 import data.Quay;
 import data.SCarrier;
 
 
 public class Simulator extends java.lang.Thread {
 
-	private Vector<SCarrier> SCarriers;
-	private Vector<Container> Containers;
+	private Vector<SCarrier> sCarriers;
+	private Vector<Container> containers;
+	private ExternalCarrier vessel;
 
-	public Simulator(Vector<SCarrier> carriers, Vector<Container> containers) {
+	public Simulator(ExternalCarrier vessel, Vector<SCarrier> carriers, Vector<Container> containers) {
 		super();
-		this.SCarriers = carriers;
-		this.Containers = containers;
+		this.sCarriers = carriers;
+		this.containers = containers;
+		this.vessel = vessel;
 	}
 
 	
-	public void run() {
+	/*public void run() {
 		
 		double dx = 0;
 		double dy = 0;
 		int translateX = 0;
 		int translateY = 0;
 		
+		//First part of the simulation , make the vessel approch the quay
+		while(vessel.getPosition().x > 500 ) {
+			vessel.getPosition().translate(-1, 0);
+			vessel.setPosition(vessel.getPosition());
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
 		while(true){
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e1) {
-			// TODO Bloc catch auto-généré
+			// TODO Bloc catch auto-gï¿½nï¿½rï¿½
 			e1.printStackTrace();
 		}
 		for (Iterator iter = this.SCarriers.iterator(); iter.hasNext();) {
@@ -126,6 +140,60 @@ public class Simulator extends java.lang.Thread {
 			
 			
 		}
+	}*/
+	
+	public void run() {
+		//First part of the simulation , make the vessel approch the quay
+		while(vessel.getPosition().x > 500 ) {
+			vessel.getPosition().translate(-1, 0);
+			vessel.setPosition(vessel.getPosition());
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		while(true) {
+			//move all carriers;
+			for(SCarrier sc : sCarriers) {
+				if(sc.getDestination()!=null) {
+					int dx=0, dy=0;
+					if(sc.getDestination().getPosition().x>sc.getPosition().x)
+						dx = 1;
+					else if(sc.getDestination().getPosition().x<sc.getPosition().x)
+						dx = -1;
+					
+					if(sc.getDestination().getPosition().y>sc.getPosition().y)
+						dy = 1;
+					else if(sc.getDestination().getPosition().y<sc.getPosition().y)
+						dy = -1;
+					
+					sc.getPosition().translate(dx, dy);
+					sc.setPosition(sc.getPosition());
+					
+					if(sc.getDestination().getPosition().x==sc.getPosition().x
+							&& sc.getDestination().getPosition().y==sc.getPosition().y) {
+						if(sc.isContainerLoaded()) {
+							sc.destinationReachedEventSensor();
+							sc.setContainerIDSensor(-1);
+						}
+						else {
+							Container cont = findContainerAtCrane(sc);
+							if(cont!=null)
+								sc.setContainerIDSensor(cont.getID());
+							sc.destinationReachedEventSensor();
+						}
+						
+						
+					}
+				}
+			}
+			
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {}
+		}
 	}
 
 	/**
@@ -133,7 +201,7 @@ public class Simulator extends java.lang.Thread {
 	 * @return the container at the same position than the scarrier
 	 */
 	private Container findContainerAtCrane(SCarrier scarrier){			
-		for (Iterator iter = this.Containers.iterator(); iter.hasNext();) {
+		for (Iterator iter = this.containers.iterator(); iter.hasNext();) {
 			Container cont = (Container) iter.next();
 			if (cont.getLocation().getPosition().equals(scarrier.getPosition())){
 				return cont; //there is a container at the crane , we return it

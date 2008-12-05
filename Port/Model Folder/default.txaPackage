@@ -514,11 +514,6 @@
 			<property name="$name" value="SD20_Int_InvocationSpecification2"/>
 			<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvfo1lelhe8dc2qf:-y8nsowfo1az5llw5rbg2:-yrgd8efo0bgp88-4diepc"/>
 			<property name="call_cachedSequenceNumber" value="1"/>
-			<link uin="ieje0rfo1lelib4nn7kl">
-				<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-				<participant referencedUin="design:node:::l2gqtvfo1lelhheufxih:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-				<participant referencedUin="jdt:e_method:src:simulation.Simulator.run:run" role="Supplier"></participant>
-			</link>
 		</node>
 		<node uin="7chx8lfo2xo28w6umadg">
 			<property name="$metaclass" value="SD20_CombinedFragment"/>
