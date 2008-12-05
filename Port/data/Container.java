@@ -37,7 +37,7 @@ public class Container extends Observable {
 	 */
 	public Container(int id, LeafPortLocation location,  boolean hazardous) {
 		super();
-		this.nextTransportIndex = 0;
+		this.nextTransportIndex = -1;
 		this.Transports = new Vector<Transport>();
 		this.hazardous = hazardous;
 		this.Location = location;

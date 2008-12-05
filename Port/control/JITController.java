@@ -128,12 +128,26 @@ public class JITController {
 		//creation of the containers
 		Container container1 = new Container(200,vessel,false);
 		Container container2 = new Container(201,vessel,false);
-		Container containerHasardous1= new Container(202,vessel,true);
+		Container container3 = new Container(202,vessel,false);
+		Container container4 = new Container(203,vessel,false);
+		Container containerHasardous1= new Container(220,vessel,true);
+		Container containerHasardous2= new Container(221,vessel,true);
+		Container containerHasardous3= new Container(222,vessel,true);
+		Container containerHasardous4= new Container(223,vessel,true);
+		
 		
 		//Add the container the the list of container
 		this.Containers.addElement(container1);
-		this.Containers.addElement(container2);
 		this.Containers.addElement(containerHasardous1);
+		this.Containers.addElement(container2);
+		this.Containers.addElement(containerHasardous2);
+		this.Containers.addElement(container3);
+		this.Containers.addElement(containerHasardous3);
+		this.Containers.addElement(container4);
+		this.Containers.addElement(containerHasardous4);
+		
+		
+		
 	
 	}
 
@@ -197,6 +211,20 @@ public class JITController {
 	}
 	
 	/**
+	 * findContainerAtCrane : will find the container which is at the crane  (and then at the position of the scarrier)
+	 * @return the container at the same position than the scarrier
+	 */
+	private Container findContainerAtCrane(SCarrier scarrier){			
+		for (Iterator iter = this.Containers.iterator(); iter.hasNext();) {
+			Container cont = (Container) iter.next();
+			if (cont.getLocation().getPosition().equals(scarrier.getPosition())){
+				return cont; //there is a container at the crane , we return it
+			}
+		}
+		return null;
+	}
+	
+	/**
 	 * containerLoaded : I don't know yet
 	 * @param crane
 	 */
@@ -238,29 +266,34 @@ public class JITController {
 	 * 						else it has to load the container and find where it has to go
 	 * @param carrier : the carrier which reach its destination
 	 */
-	public void destinationReached(SCarrier carrier) {
-		int idContainer = carrier.getContainerIDSensor();
+	public void destinationReached(SCarrier scarrier) {
+		int idContainer = scarrier.getContainerIDSensor();
+		
 			if (idContainer == -1){
 				//Load a container
-				Container Container = findContainer(idContainer);
-				carrier.loadContainer(Container); //set the location of the container on the straddle carrier
+				
+				Container container = findContainerAtCrane(scarrier);//find which container is at the crane
+				if (container != null){
+					scarrier.setContainerIDSensor(container.getID());
+				}else System.out.println("No container fund where the stradle carrier is : PROBLEME");
+				scarrier.loadContainer(container); //set the location of the container on the straddle carrier
 				PortLocation cargoArea;
-				if(Container.isHazardous()){
+				if(container.isHazardous()){
 					//the Container is Hasardous
 					cargoArea = this.Port.getChildren("CargoArea2Hasardous");
 				}else{
 					//The container is not Hasardous
-					cargoArea = this.Port.getChildren("cargoArea1");
+					cargoArea = this.Port.getChildren("CargoArea1");
 				}
 				ContainerSpace emptyPlace = cargoArea.findFreeContainerSpace();
-				Container.insertTransport(new Transport(emptyPlace));
-				carrier.setDestination(emptyPlace);
+				container.insertTransport(new Transport(emptyPlace));
+				scarrier.setDestination(emptyPlace);
 			}else{
 				//Unload a container
 				Container Container = findContainer(idContainer);
-				carrier.unloadContainer(Container, carrier.getDestination()); //will set the new location of the container
+				scarrier.unloadContainer(Container, scarrier.getDestination()); //will set the new location of the container
 				Container.nextTransport();
-				carrier.setContainerIDSensor(-1);
+				scarrier.setContainerIDSensor(-1);
 				//A savoir si il faut pas qu'on mette ici que le container est plus sur le carrier, dailleurs pour l'instant je l'ai fait comme ca
 				
 			}
