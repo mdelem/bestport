@@ -11,6 +11,7 @@ import control.JITController;
 
 import data.Container;
 import data.Crane;
+import data.ExternalCarrier;
 import data.Port;
 import data.PortLocation;
 import data.Quay;
@@ -27,41 +28,13 @@ public class GraphicalTest {
 		
 		CraneGUI cgui = new CraneGUI(control, crane1);
 		
-		PortLocation vessel = control.getPort().getChildren("Vessel");
+		ExternalCarrier vessel = (ExternalCarrier)control.getPort().getChildren("Vessel");
 		
 		
-		
-		//First part of the simulation , make the vessel approch the quay
-		while(vessel.getPosition().x > 500 ) {
-			vessel.getPosition().translate(-1, 0);
-			vessel.setPosition(vessel.getPosition());
-			try {
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		
-		Simulator simu = new Simulator(control.getSCarriers(),control.getContainers());
+		Simulator simu = new Simulator(vessel, control.getSCarriers(),control.getContainers());
 		simu.start(); // this will automatically call the run() method in the simulator
 		
-		/*
-		Port port = new Port(1, "BestPort", new Point(10, 50));
-		CraneGUI cgui = new CraneGUI(null, null);
-		LogisticsDptGUI logistics = new LogisticsDptGUI(null, new Vector<Container>(), port);
 	
-		SCarrier sc = new SCarrier(1, "SC1", new Point(600, 400));
-		port.addChild(sc);
-		
-		while(sc.getPosition().x > 0 && sc.getPosition().y > 0) {
-			sc.getPosition().translate(-1, -1);
-			sc.setPosition(sc.getPosition());
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}*/
 	}
 
 }

@@ -10,6 +10,7 @@ public class SCarrier extends Carrier {
 	private int containerIDSensor;
 	private LeafPortLocation destination;
 	private JITController controller;
+	private Container loadedContainer;
 
 	
 	
@@ -25,14 +26,16 @@ public class SCarrier extends Carrier {
 		this.controller = controller;
 	}
 
-	public void unloadContainer(Container c, LeafPortLocation location) {
-		c.setLocation(location);
+	public void unloadContainer(LeafPortLocation location) {
+		loadedContainer.setLocation(location);
+		loadedContainer=null;
 	}
 
 	/**
 	 * loadContainer : set the location of the container
 	 */
 	public void loadContainer(Container c) {
+			loadedContainer = c;
 			c.setLocation(this);
 	}
 
@@ -44,9 +47,7 @@ public class SCarrier extends Carrier {
 	}
 
 	public boolean isMoving() {
-		//Commented automatically
-		//return;
-		return false;
+		return getPosition().equals(destination) && !isContainerLoaded();
 	}
 
 	public LeafPortLocation getDestination() {
@@ -64,5 +65,13 @@ public class SCarrier extends Carrier {
 	public void setContainerIDSensor(int property1) {
 			this.containerIDSensor = property1;
 		}
+
+	public boolean isContainerLoaded() {
+		return loadedContainer!=null;
+	}
+
+	public Container getLoadedContainer() {
+		return loadedContainer;
+	}
 
 }

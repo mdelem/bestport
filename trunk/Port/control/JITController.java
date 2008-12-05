@@ -268,35 +268,28 @@ public class JITController {
 	 */
 	public void destinationReached(SCarrier scarrier) {
 		int idContainer = scarrier.getContainerIDSensor();
-		
-			if (idContainer == -1){
-				//Load a container
-				
-				Container container = findContainerAtCrane(scarrier);//find which container is at the crane
-				if (container != null){
-					scarrier.setContainerIDSensor(container.getID());
-				}else System.out.println("No container fund where the stradle carrier is : PROBLEME");
-				scarrier.loadContainer(container); //set the location of the container on the straddle carrier
-				PortLocation cargoArea;
-				if(container.isHazardous()){
-					//the Container is Hasardous
-					cargoArea = this.Port.getChildren("CargoArea2Hasardous");
-				}else{
-					//The container is not Hasardous
-					cargoArea = this.Port.getChildren("CargoArea1");
-				}
-				ContainerSpace emptyPlace = cargoArea.findFreeContainerSpace();
-				container.insertTransport(new Transport(emptyPlace));
-				scarrier.setDestination(emptyPlace);
+		if(!scarrier.isContainerLoaded() && idContainer!=-1) {
+			//Load a container
+			Container container = findContainer(idContainer);
+			scarrier.loadContainer(container); //set the location of the container on the straddle carrier
+			PortLocation cargoArea;
+			if(container.isHazardous()){
+				//the Container is Hasardous
+				cargoArea = this.Port.getChildren("CargoArea2Hasardous");
 			}else{
-				//Unload a container
-				Container Container = findContainer(idContainer);
-				scarrier.unloadContainer(Container, scarrier.getDestination()); //will set the new location of the container
-				Container.nextTransport();
-				scarrier.setContainerIDSensor(-1);
-				//A savoir si il faut pas qu'on mette ici que le container est plus sur le carrier, dailleurs pour l'instant je l'ai fait comme ca
-				
+				//The container is not Hasardous
+				cargoArea = this.Port.getChildren("CargoArea1");
 			}
+			ContainerSpace emptyPlace = cargoArea.findFreeContainerSpace();
+			container.insertTransport(new Transport(emptyPlace));
+			scarrier.setDestination(emptyPlace);
+		}
+		else if(idContainer!=-1){
+//			Unload a container
+			scarrier.getLoadedContainer().nextTransport();
+			scarrier.unloadContainer(scarrier.getDestination()); //will set the new location of the container
+			
+		}
 	}
 
 	public Vector<Container> getContainers() {
