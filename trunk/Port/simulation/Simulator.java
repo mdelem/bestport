@@ -158,22 +158,23 @@ public class Simulator extends java.lang.Thread {
 			//move all carriers;
 			for(SCarrier sc : sCarriers) {
 				if(sc.getDestination()!=null) {
-					int dx=0, dy=0;
-					if(sc.getDestination().getPosition().x>sc.getPosition().x)
-						dx = 1;
-					else if(sc.getDestination().getPosition().x<sc.getPosition().x)
-						dx = -1;
+					int dx=sc.getDestination().getPosition().x - sc.getPosition().x;
+					int dy=sc.getDestination().getPosition().y - sc.getPosition().y;
 					
-					if(sc.getDestination().getPosition().y>sc.getPosition().y)
-						dy = 1;
-					else if(sc.getDestination().getPosition().y<sc.getPosition().y)
-						dy = -1;
+					if(dx>0)
+						dx = Math.min(dx/Math.abs(dx)*5, dx);
+					else if(dx<0)
+						dx = Math.max(dx/Math.abs(dx)*5, dx);
+						
+					if(dy>0)
+						dy = Math.min(dy/Math.abs(dy)*5, dy);
+					else if(dy<0)
+						dy = Math.max(dy/Math.abs(dy)*5, dy);
 					
 					sc.getPosition().translate(dx, dy);
 					sc.setPosition(sc.getPosition());
 					
-					if(sc.getDestination().getPosition().x==sc.getPosition().x
-							&& sc.getDestination().getPosition().y==sc.getPosition().y) {
+					if(sc.getDestination().getPosition().equals(sc.getPosition())) {
 						if(sc.isContainerLoaded()) {
 							sc.destinationReachedEventSensor();
 							sc.setContainerIDSensor(-1);
@@ -191,7 +192,7 @@ public class Simulator extends java.lang.Thread {
 			}
 			
 			try {
-				Thread.sleep(10);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {}
 		}
 	}
