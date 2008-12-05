@@ -250,11 +250,6 @@
 						<property name="$metaclass" value="SD20_ExecutionSpecification"/>
 						<property name="$name" value="SD20_ExecutionSpecification2"/>
 					</node>
-					<link uin="ieje0rfo2xvfuw15are4">
-						<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-						<participant referencedUin="design:node:::l2gqtvfo2xvfufltvvdj:c87hzvfo2xubpxqvgl75:-y8nsowfo0djpit8n19so:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-						<participant referencedUin="jdt:e_method:src:control.JITController.destinationReached:destinationReached~QSCarrier;" role="Supplier"></participant>
-					</link>
 				</node>
 			</node>
 			<node uin="7x5rzxfo2y7u8hog4x6f">
@@ -291,11 +286,6 @@
 						<property name="$metaclass" value="SD20_ExecutionSpecification"/>
 						<property name="$name" value="SD20_ExecutionSpecification1"/>
 					</node>
-					<link uin="ieje0rfo2ybn6l3d87m9">
-						<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-						<participant referencedUin="design:node:::l2gqtvfo2ybn6cj0w12n:c87hzvfo2y8r0e-r2cuw1:-y8nsowfo0djpit8n19so:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-						<participant referencedUin="jdt:e_method:src:control.JITController.destinationReached:destinationReached~QSCarrier;" role="Supplier"></participant>
-					</link>
 				</node>
 			</node>
 			<link uin="ieje0rfo0go1i9-fqyx5x">
