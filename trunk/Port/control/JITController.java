@@ -31,25 +31,6 @@ public class JITController {
 	public JITController() {
 		super();
 		
-		/*
-		 * The port will be like this : (X,Y) are the coordinates in a 2D representation
-		 * 
-		 *	Port(0,0):
-		 *		-Quay1(500,0)
-		 *			-Crane1(490,0)
-		 *			-Crane2(510,0)
-		 *		-CargoArea1 (Non-hasardous)  (0,500)
-		 *			-Stack1(10,500)
-		 *			-Stack2(20,500)
-		 *			-Stack3(30,500)
-		 *		-CargoArea2 : Hasardous  (500,500)
-		 *			-Stack1(510,500)
-		 *		-StraddleCarrier 1 (250,250)
-		 *		-StraddleCarrier 2 (260,250)
-		 *		-StraddleCarrier 3 (270,250)
-		 * 
-		 * 
-		 */
 		this.SCarriers = new Vector<SCarrier>();
 		this.Containers = new Vector<Container>();
 		
