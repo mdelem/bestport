@@ -25,8 +25,10 @@ public class GraphicalTest {
 		LogisticsDptGUI logistics = new LogisticsDptGUI(control, control.getContainers(), control.getPort());
 		
 		Crane crane1 = (Crane)((Quay)control.getPort().getChildren("Quay1")).getChildren("Crane1");
+		Crane crane2 = (Crane)((Quay)control.getPort().getChildren("Quay1")).getChildren("Crane2");
 		
-		CraneGUI cgui = new CraneGUI(control, crane1);
+		CraneGUI cgui1 = new CraneGUI(control, crane1);
+		CraneGUI cgui2 = new CraneGUI(control, crane2);
 		
 		ExternalCarrier vessel = (ExternalCarrier)control.getPort().getChildren("Vessel");
 		
