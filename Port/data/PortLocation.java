@@ -44,7 +44,7 @@ public abstract class PortLocation extends Observable {
 	 * findfreeContainerSpace : look into the cargoArea in order to find free space for stocking containers
 	 * @return the CargoAreaSpace free or null if there is no empty place
 	 */
-	public ContainerSpace findFreeContainerSpace() {
+	public CargoAreaSpace findFreeContainerSpace() {
 		Collection<PortLocation> childrens = this.getChildren();
 		for (Iterator iter = childrens.iterator(); iter.hasNext();) {
 			PortLocation stack = (PortLocation) iter.next();

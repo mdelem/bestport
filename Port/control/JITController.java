@@ -130,10 +130,12 @@ public class JITController {
 		Container container2 = new Container(201,vessel,false);
 		Container container3 = new Container(202,vessel,false);
 		Container container4 = new Container(203,vessel,false);
+		Container container5 = new Container(204,vessel,false);
+		Container container6 = new Container(205,vessel,false);
+		Container container7 = new Container(206,vessel,false);
 		Container containerHasardous1= new Container(220,vessel,true);
 		Container containerHasardous2= new Container(221,vessel,true);
 		Container containerHasardous3= new Container(222,vessel,true);
-		Container containerHasardous4= new Container(223,vessel,true);
 		
 		
 		//Add the container the the list of container
@@ -144,8 +146,9 @@ public class JITController {
 		this.Containers.addElement(container3);
 		this.Containers.addElement(containerHasardous3);
 		this.Containers.addElement(container4);
-		this.Containers.addElement(containerHasardous4);
-		
+		this.Containers.addElement(container5);
+		this.Containers.addElement(container6);
+		this.Containers.addElement(container7);
 		
 		
 	
@@ -225,7 +228,22 @@ public class JITController {
 	}
 	
 	/**
-	 * containerLoaded : I don't know yet
+	 * isContainerAtCrane : test if there is a container at the specific crane
+	 * @param c : the crane where we want to test if there is a container
+	 * @return true : there is a container / false : no container at the crane
+	 */
+	private boolean isContainerAtCrane(Crane c){
+		for (Iterator iter = this.Containers.iterator(); iter.hasNext();) {
+			Container cont = (Container) iter.next();
+			if (cont.getLocation().getPosition().equals(c.getPosition())){
+				return true; //there is a container at the crane , we return it
+			}
+		}
+		return false;
+	}
+	
+	/**
+	 * containerLoaded : not implemented
 	 * @param crane
 	 */
 	public void containerLoaded(Crane crane) {
@@ -240,10 +258,19 @@ public class JITController {
 		//first we have to check that some containers wait at quay to be unloaded
 		Container cont = findContainerToUnload();
 		if (cont != null){
-			//there is at least one container to unload
-			moveContainerToCrane(cont, crane); //The container was at the quay we put it on the crane (it simulate that the crane unload the cnotainer from the vessel)		
-			SCarrier closest = findClosestSC(crane);
-			closest.setDestination(crane);
+			if(!isContainerAtCrane(crane)){//We now check that there are no container on the crane at the moment
+				//there is at least one container to unload
+				SCarrier closest = findClosestSC(crane);
+				if (closest != null){
+				moveContainerToCrane(cont, crane); //The container was at the quay we put it on the crane (it simulate that the crane unload the container from the vessel)		
+				closest.setContainerIDSensor(0); //this is a trick in order to tell to the simulator that this Scarrier is not free
+				closest.setDestination(crane);
+				}else{
+					System.out.println("No Straddle Carrier are available for the moment, try later");
+				}
+			}else{
+				System.out.println("There is a container at the crane, you have to wait that a Straddle carrier come to get it");
+			}
 			//And when the Scarrier will reach his destination the simulator will put the container on it
 		}else{
 			System.out.println("There are no more containers to unload");
@@ -280,15 +307,16 @@ public class JITController {
 				//The container is not Hasardous
 				cargoArea = this.Port.getChildren("CargoArea1");
 			}
-			ContainerSpace emptyPlace = cargoArea.findFreeContainerSpace();
+			CargoAreaSpace emptyPlace = cargoArea.findFreeContainerSpace();
+			emptyPlace.setFree(false); //we supose here that there is always free space in the port
 			container.insertTransport(new Transport(emptyPlace));
 			scarrier.setDestination(emptyPlace);
 		}
 		else if(idContainer!=-1){
-//			Unload a container
+			//Unload a container
 			scarrier.getLoadedContainer().nextTransport();
 			scarrier.unloadContainer(scarrier.getDestination()); //will set the new location of the container
-			
+			scarrier.setDestination(null);
 		}
 	}
 

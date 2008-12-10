@@ -183,7 +183,8 @@ public class Simulator extends java.lang.Thread {
 							Container cont = findContainerAtCrane(sc);
 							if(cont!=null)
 								sc.setContainerIDSensor(cont.getID());
-							sc.destinationReachedEventSensor();
+								sc.destinationReachedEventSensor();
+								System.out.println("test");
 						}
 						
 						

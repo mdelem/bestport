@@ -25,10 +25,15 @@ public class CraneGUI extends JFrame implements ActionListener {
 	public CraneGUI(JITController jitc, Crane c) {
 		controller=jitc;
 		crane=c;
+		JButton jButton;
 		
 		JPanel jPanel = new JPanel();
 		this.setContentPane(jPanel);
-		JButton jButton = new JButton("container unloaded");
+		if (c.getName().equals("Crane1")) {
+			 jButton = new JButton("container unloaded (left crane)");
+		}else{
+			 jButton = new JButton("container unloaded (right crane)");
+		}
 		jPanel.add(jButton);
 		
 		jButton.addActionListener(this);
