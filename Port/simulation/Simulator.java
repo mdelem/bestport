@@ -184,7 +184,6 @@ public class Simulator extends java.lang.Thread {
 							if(cont!=null)
 								sc.setContainerIDSensor(cont.getID());
 								sc.destinationReachedEventSensor();
-								System.out.println("test");
 						}
 						
 						
