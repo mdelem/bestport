@@ -11,8 +11,8 @@
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="design:link:::ieje0rfo8fvrfxj88ajw:ttifwdfo8fuv19-djkx7k">
-				<property name="sourceAnchor" value="1357,98"/>
-				<property name="targetAnchor" value="1357,290"/>
+				<property name="sourceAnchor" value="1315,99"/>
+				<property name="targetAnchor" value="1315,290"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 			<reference referencedUin="design:node:::ul14qafo8fuv1d-h25yau:ttifwdfo8fuv19-djkx7k">
@@ -142,16 +142,16 @@
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:data.Container:Transports">
-				<property name="sourceAnchor" value="1238,215"/>
-				<property name="targetAnchor" value="1027,110"/>
+				<property name="sourceAnchor" value="1240,226"/>
+				<property name="targetAnchor" value="1025,111"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:data.Container:Transports">
-					<property name="bounds" value="1102,178,60,21"/>
+					<property name="bounds" value="1102,187,60,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:data.Container:Transports">
-					<property name="bounds" value="1036,90,29,21"/>
+					<property name="bounds" value="1034,92,29,21"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:data.Container:Transports">
-					<property name="bounds" value="1226,186,12,21"/>
+					<property name="bounds" value="1219,192,12,21"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:data.Container:lnkLeafPortLocation">
@@ -171,8 +171,8 @@
 			<reference referencedUin="jdt:e_method:src:data.Container.setLocation:setLocation~QLeafPortLocation;">
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:data.Container:Location">
-				<property name="sourceAnchor" value="1238,236"/>
-				<property name="targetAnchor" value="832,236"/>
+				<property name="sourceAnchor" value="1240,231"/>
+				<property name="targetAnchor" value="831,231"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:data.Container:Location">
 					<property name="bounds" value="1045,240,33,21"/>
@@ -269,13 +269,13 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:control.JITController:Containers">
-				<property name="sourceAnchor" value="829,919"/>
+				<property name="sourceAnchor" value="830,920"/>
 				<property name="targetAnchor" value="1340,401"/>
 				<property name="bendpoints" value="1200,920,1340,880"/>
 				<property name="smooth_bendpoints" value="1200,920,1340,880"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:control.JITController:Containers">
-					<property name="bounds" value="839,895,12,21"/>
+					<property name="bounds" value="840,896,12,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:control.JITController:Containers">
 					<property name="bounds" value="1343,410,29,21"/>
@@ -313,14 +313,14 @@
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:JITController:lnkPortLocation">
 					<property name="bounds" value="848,704,12,21"/>
 				</reference>
-				<reference referencedUin="label:label:jdt:l_ast:src:control.JITController:lnkPortLocation">
-					<property name="bounds" value="1605,360,32,21"/>
-				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:control.JITController:lnkPortLocation">
 					<property name="bounds" value="557,56,12,21"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:control.JITController:lnkPortLocation">
 					<property name="bounds" value="883,752,12,21"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:control.JITController:lnkPortLocation">
+					<property name="bounds" value="1605,360,32,21"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:JITController:lnkPortLocation">
 					<property name="bounds" value="1240,346,32,21"/>
@@ -378,14 +378,14 @@
 				<property name="smooth_bendpoints" value="120,1040"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:gui.LogisticsDptGUI:containers">
-				<property name="sourceAnchor" value="1372,1138"/>
-				<property name="targetAnchor" value="1372,401"/>
+				<property name="sourceAnchor" value="1367,1140"/>
+				<property name="targetAnchor" value="1367,401"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:gui.LogisticsDptGUI:containers">
-					<property name="bounds" value="1375,1117,12,21"/>
+					<property name="bounds" value="1370,1109,12,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:gui.LogisticsDptGUI:containers">
-					<property name="bounds" value="1375,410,29,21"/>
+					<property name="bounds" value="1370,440,29,21"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:e_field:src:gui.LogisticsDptGUI.containers">
@@ -416,17 +416,17 @@
 				<property name="targetAnchor" value="1214,542"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:simulation.Simulator:containers">
-				<property name="sourceAnchor" value="1273,558"/>
-				<property name="targetAnchor" value="1273,401"/>
+				<property name="sourceAnchor" value="1269,560"/>
+				<property name="targetAnchor" value="1269,401"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:simulation.Simulator:Containers">
 					<property name="bounds" value="1493,813,10,17"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:simulation.Simulator:containers">
-					<property name="bounds" value="1316,537,12,21"/>
+					<property name="bounds" value="1322,539,12,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:simulation.Simulator:containers">
-					<property name="bounds" value="1276,410,29,21"/>
+					<property name="bounds" value="1272,410,29,21"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:simulation.Simulator:Containers">
 					<property name="bounds" value="1386,370,24,17"/>
@@ -491,8 +491,8 @@
 			<reference referencedUin="property:e_property:jdt=e_class=src=data.SCarrier:containerIDSensor">
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:data.SCarrier:loadedContainer">
-				<property name="sourceAnchor" value="1080,513"/>
-				<property name="targetAnchor" value="1238,347"/>
+				<property name="sourceAnchor" value="1079,512"/>
+				<property name="targetAnchor" value="1240,351"/>
 			</reference>
 			<reference referencedUin="jdt:e_method:src:data.SCarrier.loadContainer:loadContainer">
 				<property name="bounds" value="102,-21,0,0"/>
