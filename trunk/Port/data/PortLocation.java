@@ -9,6 +9,12 @@ public abstract class PortLocation extends Observable {
 	private int ID;
 	private String name;
 	private Point position;
+	
+	/**
+	 * @directed true
+	 * @label parent
+	 */
+	
 	private PortLocation parent;
 	
 	public PortLocation(int ID, String name, Point position) {
