@@ -57,7 +57,10 @@ public class Container extends Observable {
 	 * @return the next transport(destination)
 	 */
 	public Transport peekTransport() {
-		return this.Transports.elementAt(nextTransportIndex);
+		if(nextTransportIndex<0)
+			return null;
+		else
+			return this.Transports.elementAt(nextTransportIndex);
 	}
 
 	/**
@@ -66,7 +69,11 @@ public class Container extends Observable {
 	 */
 	public Transport nextTransport() {
 		this.nextTransportIndex++;
-		return this.Transports.elementAt(nextTransportIndex);
+		if(nextTransportIndex<Transports.size()) {
+				return this.Transports.elementAt(nextTransportIndex);
+		}
+		else
+			throw new IllegalStateException();
 	}
 
 	/**
