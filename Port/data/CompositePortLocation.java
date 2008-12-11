@@ -41,7 +41,7 @@ public abstract class CompositePortLocation extends PortLocation {
 			//if the carrier is more near and if it is free
 			if(location.getName().equals(name)) return location;
 		}
-		return location;
+		return null;
 	}
 	
 	/**
