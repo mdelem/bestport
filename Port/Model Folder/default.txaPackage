@@ -57,11 +57,7 @@
 					<property name="$name" value="SD20_Int_InvocationSpecification1"/>
 					<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvfo2xef7c1pp9rz:-y8nsowfo0bimck-blb4l6:-yrgd8efo0bgp88-4diepc"/>
 					<property name="call_cachedSequenceNumber" value="2.1"/>
-					<link uin="ieje0rfo2xef7x2qjdhb">
-						<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-						<participant referencedUin="design:node:::l2gqtvfo2xef6yu3iy3r:c87hzvfo1cf5cok9d94d:-y8nsowfo1cd2nvig86k2:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-						<participant referencedUin="jdt:e_method:src:control.JITController.containerUnloaded:containerUnloaded~QCrane;" role="Supplier"></participant>
-					</link>
+					<property name="signalOrOperationName" value="containerAtCrane"/>
 				</node>
 			</node>
 			<link uin="ieje0rfo1cddgt-x0rkwq">
@@ -503,10 +499,10 @@
 			<property name="$name" value="SD20_Int_InvocationSpecification1"/>
 			<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvfo1cf5cok9d94d:-y8nsowfo1cd2nvig86k2:-yrgd8efo0bgp88-4diepc"/>
 			<property name="call_cachedSequenceNumber" value="2"/>
-			<link uin="ieje0rfo1cf5d4pk506j">
+			<link uin="ieje0rfolaq1jc-kik93f">
 				<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 				<participant referencedUin="design:node:::l2gqtvfo1cf5cqy62r7a:-yrgd8efo0bgp88-4diepc" role="Client"></participant>
-				<participant referencedUin="jdt:e_method:src:gui.CraneGUI.CraneGUI:CraneGUI~QJITController;~QCrane;~QString;" role="Supplier"></participant>
+				<participant referencedUin="jdt:e_method:src:gui.CraneGUI.containerUnloaded:containerUnloaded" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="l2gqtvfo1lelhheufxih">
